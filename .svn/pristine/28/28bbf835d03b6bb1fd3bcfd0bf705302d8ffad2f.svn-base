@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="dist/css/bootstrap-select.css">-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/registration.css" rel="stylesheet">
+
+  <!-- Template styles -->
+  <style>
+    /* TEMPLATE STYLES */
+
+
+    body {
+      font: 12px 'Open Sans';
+    }
+    .form-control, .thumbnail {
+      border-radius: 2px;
+    }
+    .btn-danger {
+      background-color: #B73333;
+    }
+
+    /* File Upload */
+    .fake-shadow {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+    .fileUpload {
+      position: relative;
+      overflow: hidden;
+    }
+    .fileUpload #logo-id {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 33px;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+    .img-preview {
+      max-width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    p#text-description {
+      font-family: sans-serif;
+      font-size: 14px;
+      position: relative;
+      top: 8px;
+    }
+    span#sall-font {
+      position: relative;
+      font-size: 13px;
+    }
+
+    main {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .widget-wrapper {
+      padding-bottom: 2rem;
+      //  border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .reviews {
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -2px;
+    }
+
+    .price .tag {
+      margin: 0;
+    }
+
+    .list-group
+    {
+      margin-top: -20px;  
+      }/* 
+      .col-sm-6
+      {
+        right: 30%;
+        top: 40%;
+    }
+    .col-lg-7
+    {
+ right: 8%;
+}*/
+
+</style>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+
+      <!-- Collapse button-->
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+
+        <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;"><img src="images/uso_logo.png" height="50" width="250"></a>
+
+        <i class="fa fa-bars"></i>
+      </button>
+
+
+
+      <!--Collapse content-->
+      <div class="collapse navbar-toggleable-xs" id="collapseEx">
+        <!--Navbar Brand-->
+        <!--<a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>-->
+        <!--Links-->
+        <div  class="col-lg-6">
+          <ul class="nav navbar-nav col-lg-8">
+            <li class="nav-item">
+              <div style="float : left; ">
+                <a href="index.html"><img src="images/uso_logo5.png" height="40" alt="USO" class="hidden-xs"></a>
+              </div>
+
+            </li>
+          </ul>
+          <div class="col-lg-1" style="text-align: left; margin-top: 10px;"><a href="index.html">Home</a> 
+          </div>
+          <div class="col-lg-1" style="text-align: left; margin-top: 10px;"><a href="#">about</a> 
+          </div>
+        </div>
+        <div class="col-lg-6" style="text-align: left ;"> 
+          <div class="col-lg-4" style="text-align: right; "> 
+          </div>
+          <div  style="float: right; margin-top: 10px;"> 
+            <div id="google_translate_element"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+            }
+          </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!--/.Collapse content-->
+
+    
+
+  </nav>
+
+  <!--/.Navbar-->
+
+</header>
+
+<main>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-2">
+        <div class="row">
+
+          <hr />
+          <div class="form-group">
+            <div class="main-img-preview" >
+            <p class="help-block"> <h4> Your Profile picture</h4></p>
+             <img class="thumbnail img-preview" src="images/user.jpg" title="Preview Logo" style="width: 150px;height: 120px;">
+           </div>
+           <div class="input-group">
+            <!-- <input id="fakeUploadLogo" class="form-control fake-shadow" placeholder="Choose File" disabled="disabled"> -->
+            <div class="input-group-btn">
+              <div class="fileUpload btn btn-danger fake-shadow">
+                <span><i class="glyphicon glyphicon-upload"></i> Upload Image</span>
+                <input id="logo-id" name="logo" type="file" class="attachment_upload">
+              </div>
+            </div>
+          </div>
+          <p class="help-block">* Upload Your Profile picture.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="col-lg-8" style="background-color: white; height: 50%;">
+     <h3>
+        Profile Setting
+      </h3>
+
+     <div class="row" ">
+      <div class="col-sm-6 form-group" >
+        <div class="md-form">
+          <i class="fa fa-user prefix"></i>
+          <input type="text" id="title" class="form-control">
+          <label for="title">User Name</label>
+        </div>
+      </div>
+      <div class="col-sm-6 form-group">
+        <div class="md-form">
+          <i class="fa fa-envelope prefix"></i>
+          <input type="text" id="type" class="form-control">
+          <label for="type">Email</label>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-sm-6 form-group">
+        <div class="md-form">
+          <i class="fa fa-lock prefix"></i>
+          <input type="password" id="form10" class="form-control validate">
+          <label for="form10" data-error="wrong" data-success="right">Type your password</label>
+        </div>
+      </div>
+      <div class="col-sm-6 form-group">
+        <div class="md-form">
+          <i class="fa fa-lock prefix"></i>
+          <input type="password" id="form11" class="form-control validate">
+          <label for="form11" data-error="wrong" data-success="right">Confirm your password</label>
+        </div>
+      </div>
+    </div> 
+    <section>
+      <h3>
+        <b>Profile Setting</b>
+      </h3>
+      <div class="row" ">
+        <div class="col-sm-6 form-group" >
+          <div class="md-form">
+            <i class="fa fa-user prefix"></i>
+            <input type="text" id="title" class="form-control">
+            <label for="title">First Name</label>
+          </div>
+        </div>
+        <div class="col-sm-6 form-group">
+          <div class="md-form">
+            <i class="fa fa-user prefix"></i>
+            <input type="text" id="ln" class="form-control">
+            <label for="ln">Last Name</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" ">
+
+        <div class="col-sm-6 form-group" >
+              <label><h4><b>Date of Birth</b></h4></label>
+          <div class="md-form">
+
+            <i class="fa fa-user prefix"></i>
+            <input type="date" id="title" class="form-control">
+
+          </div>
+        </div>
+        <div class="col-sm-6 form-group" >
+         <div class="col-md-12">
+           <label><h4><b>Location</b></h4></label>
+           <select id="blood_group" name="blood_group" class="form-control">
+            <option value="-1">Select</option>
+            <option value="1">India</option>
+            <option value="2">America</option>
+            <option value="3">Japan</option>
+            <option value="4">Brazil</option>
+            <option value="5">Indonesia</option>
+            <option value="6">Africa</option>
+            <option value="7">South Africa</option>
+            <option value="8">Sri Lanka</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-6 form-group">
+
+       <div class="col-md-12">
+         <label><h3><b>Position</b></h3></label>
+         <select id="blood_group" name="blood_group" class="form-control">
+          <option value="-1">Select</option>
+          <option value="1">CEO</option>
+          <option value="2">Director</option>
+          <option value="3">Manager</option>
+          <option value="4">HR</option>
+          <option value="5">Employee</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section>
+  <h3>
+    <b>Contact Setting</b><br>
+  </h3>
+  <div class="row" ">
+    <div class="col-sm-6 form-group" >
+      <div class="md-form">
+        <i class="fa fa-mobile prefix"></i>
+        <input type="number" id="title" class="form-control">
+        <label for="title">Contact Number</label>
+      </div>
+    </div>
+    <div class="col-sm-6 form-group">
+      <div class="md-form">
+        <i class="fa fa-facebook prefix"></i>
+        <input type="text" id="fb" class="form-control">
+        <label for="fb">Facebook</label>
+      </div>
+    </div>
+  </div>
+  <div class="row" ">
+    <div class="col-sm-6 form-group" >
+      <div class="md-form">
+        <i class="fa fa-website prefix"></i>
+        <input type="text" id="title" class="form-control">
+        <label for="title">Website</label>
+      </div>
+    </div>
+    <div class="col-sm-6 form-group">
+      <div class="md-form">
+        <i class="fa fa-twitter prefix"></i>
+        <input type="text" id="ln" class="form-control">
+        <label for="ln">Twitter </label>
+      </div>
+    </div>
+  </div>
+
+</section>
+</div>
+
+<div class="col-lg-1">
+
+</div>
+</div>
+</div>
+</main>
+
+<!--/.Panel-->
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only primary-color-dark"  id="footer">
+
+  <!--Footer Links-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-4 offset-lg-1 hidden-lg-down">
+
+        <img src="images/uso.png">
+        United State of Oportunities<br>
+
+        We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa,job vacancies in Africa and 2016 Africa jobs and recruitment opportunities
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <hr>
+
+
+  <!--/.Call to action-->
+
+  <!--Copyright-->
+  <div class="footer-copyright" >
+    <div class="container-fluid">
+      © 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+
+    </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<script>
+
+  $(window).scroll(function () {
+    var threshold = 50;
+    $("#test").html($(window).scrollTop());
+    if ($(window).scrollTop() >= threshold)
+      $('#sidebar').addClass('fixed');
+    else
+      $('#sidebar').removeClass('fixed');
+    var check = $("#content").height() - $("#sidebar").height()-21;
+    if ($(window).scrollTop() >= check)
+      $('#sidebar').addClass('bottom');
+    else
+      $('#sidebar').removeClass('bottom');
+  });
+
+
+
+  $(document).ready(function() {
+    var brand = document.getElementById('logo-id');
+    brand.className = 'attachment_upload';
+    brand.onchange = function() {
+      document.getElementById('fakeUploadLogo').value = this.value.substring(12);
+    };
+
+    // Source: http://stackoverflow.com/a/4459419/6396981
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          $('.img-preview').attr('src', e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $("#logo-id").change(function() {
+      readURL(this);
+    });
+  });
+
+
+
+</script>
+
+<style type="text/css">
+ div#text-block {
+  position: relative; 
+  /*border: 1px solid; */
+  box-shadow: 2px 2px 5px #888888;
+} 
+/*.fa .fa-suitcase {
+    font-size: 50px;
+  }*/
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>-->
+</body>
+
+</html>

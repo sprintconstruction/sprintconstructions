@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <title>Sprint Constructions</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+ <link rel="stylesheet" href="dist/css/bootstrap-select.css">
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+ <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/bootstrap-responsive.css" rel="stylesheet">
+ <!-- Bootstrap core CSS -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+ <link href="css/style.css" rel="stylesheet">
+ <link rel="stylesheet" type="text/css" href="css/civilproject.css">
+ <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+ <!-- Material Design Bootstrap -->
+ <link href="css/mdb.min.css" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <style>
+ /* TEMPLATE STYLES */
+ /* Necessary for full page carousel*/
+ body {
+  overflow-y:hidden;
+}
+html,
+body {
+  height: 100%;
+} 
+/* Navigation*/
+.navbar {
+  background-color: transparent;
+}
+.top-nav-collapse {
+  background-color: #4285F4;
+}
+footer.page-footer {
+  background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #4285F4;
+  }
+}
+/* Carousel*/
+.carousel {
+  height: 100%;
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  /* Styles */
+  .modal-dialog {
+    width:  100% !important;
+    margin-left: 0% !important;
+  }
+}
+.carousel-item,
+.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("images/resizeimages/pammu4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("images/resizeimages/pammu3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("images/resizeimages/pammu2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:nth-child(4) {
+  background-image: url("images/resizeimages/pammu1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-item:nth-child(5) {
+  background-image: url("images/resizeimages/pammu5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-center {
+  color: #fff;
+}
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.btn-sq {
+  width: 100px !important;
+  height: 100px !important;
+  font-size: 10px;
+}
+.btn-sq-sm {
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 10px;
+}
+.btn-sq-xs {
+  width: 25px !important;
+  height: 25px !important;
+  padding:2px;
+}
+/*auto complete*/
+#ui-id-1 li{
+  border: 1px solid #dff0d8;
+  border-radius: 5px;
+  color: #2196f3;
+  font-style: italic;
+  font-style: bold;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  /* Force table to not be like tables anymore */
+  #no-more-tables table, 
+  #no-more-tables thead, 
+  #no-more-tables tbody, 
+  #no-more-tables th, 
+  #no-more-tables td, 
+  #no-more-tables tr { 
+    display: block; 
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #no-more-tables tr { border: 1px solid #ccc; }
+
+  #no-more-tables td { 
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%; 
+    white-space: normal;
+    text-align:left;
+  }
+
+  #no-more-tables td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
+
+    /*
+    Label the data
+    */
+    #no-more-tables td:before { content: attr(data-title); }
+  }
+  </style>
+</head>
+<body style="overflow-y: hidden">
+  <!--Navbar-->
+  <div class="container">
+    <div class="row">
+
+      <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+          <img src="images/resizeimages/sprint_logo.png" width=20 height=20 alt="Sprint Constructions" style="position: relative; right: 1em;"> 
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+          <!--Navbar Brand-->
+          <!-- <a class="navbar-brand">Navbar</a> -->
+          <!--Links-->
+          <ul class="nav navbar-nav">
+          <li class="nav-item active">
+              <a class="nav-link" href="job_index.html"><img src="images/resizeimages/sprint_logo.png" width="120px" height="50px" style="position: relative;bottom: 9px;"> </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="color:black;" href="job_index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plan.html" style="color:black;">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" style="color:black;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:black;">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" style="color:black;">Contact</a>
+            </li>
+                <!-- <li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <a class="dropdown-item">Action</a>
+                        <a class="dropdown-item">Another action</a>
+                        <a class="dropdown-item">Something else here</a>
+                    </div>
+                  </li> -->
+                </ul>
+                <!--Search form-->
+                <form class="form-inline">
+                  <input class="form-control" type="text" placeholder="Search">
+                </form>
+              </div>
+              <!--/.Collapse content-->
+            </nav>
+          </div>
+        </div>
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+            <li data-target="#carousel-example-1" data-slide-to="3"></li>
+            <li data-target="#carousel-example-1" data-slide-to="4"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active" >
+            </div>
+            <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
+            </div>
+            <img src="images/bank.jpg" width="10" height="10">
+          </div>
+          <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!--/.Controls-->
+        </div>
+        <br><br>
+        <!--///////////////////////////////-->
+
+        <!-- tool tip start -->
+        <!-- <div class="row"> -->
+        <!-- <div class="cal-lg-4"> -->
+        <div id="undertake"> We Are Undertaking Projects</div><br><br>
+        <div id="navbar">
+          <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="#">Active Link</a></li> -->
+                <!-- <li><a href="#">Link</a></li> -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="position: relative;color: black;font-size: 16px;">Residential 
+                    <!-- <b class="caret"></b> -->
+                  </a> 
+                  <ul class="dropdown-menu">
+                    <!-- <li class="kopie"><a href="#">Dropdown</a></li> -->
+                    <!-- <li><a href="#">Basic Home</a></li> -->
+                    <li href="#myModal" id="openBtn" data-toggle="modal" style="position:relative;left: 21px;cursor: pointer;">Basic Home</li><br>
+                    <li href="#myModal2" data-toggle="modal" class="active" style="position:relative;left: 21px;cursor: pointer;">Semi-Delux Home</li><br>
+                    <li href="#myModal3" data-toggle="modal" style="position:relative;left: 21px;cursor: pointer;">Delux Home</li><br>
+                    <li href="#myModal4" data-toggle="modal" style="position:relative;left: 21px;cursor: pointer;">Ultra-Delux Home</li>
+<!--             <li class="active"><a href="#">Semi-Delux Home</a></li>
+            <li><a href="#">Delux Home</a></li>
+            <li><a href="#">Ultra-Delux Home</a></li> -->
+
+
+            
+
+            <!-- <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown Link 4</a></li>
+                <li><a href="#">Dropdown Submenu Link 4.1</a></li>
+                <li><a href="#">Dropdown Submenu Link 4.2</a></li>
+                <li><a href="#">Dropdown Submenu Link 4.3</a></li>
+                <li><a href="#">Dropdown Submenu Link 4.4</a></li>
+              </ul>
+            </li> -->
+           <!--  <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                <li><a href="#">Dropdown Submenu Link 5.1</a></li>
+                <li><a href="#">Dropdown Submenu Link 5.2</a></li>
+                <li><a href="#">Dropdown Submenu Link 5.3</a></li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">Dropdown Submenu Link 5.4</a></li>
+                    <li><a href="#">Dropdown Submenu Link 5.4.1</a></li>
+                    <li><a href="#">Dropdown Submenu Link 5.4.2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="drop-dn">Commertial 
+            <!-- <b class="caret"></b> -->
+          </a>
+          <!-- <ul class="dropdown-menu">
+            <li class="kopie"><a href="#">Dropdown2</a></li>
+            <li><a href="#">Dropdown2 Link 1</a></li>
+            <li><a href="#">Dropdown2 Link 2</a></li>
+            <li><a href="#">Dropdown2 Link 3</a></li> -->
+            <!-- <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
+              </ul>
+            </li> -->
+        <!--     <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+            <!-- </ul> -->
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"id="drop-dn">Layout Development 
+              <!-- <b class="caret"></b> -->
+            </a>
+          <!-- <ul class="dropdown-menu">
+            <li class="kopie"><a href="#">Dropdown2</a></li>
+            <li><a href="#">Dropdown2 Link 1</a></li>
+            <li><a href="#">Dropdown2 Link 2</a></li>
+            <li><a href="#">Dropdown2 Link 3</a></li> -->
+            <!-- <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
+              </ul>
+            </li> -->
+        <!--     <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+            <!-- </ul> -->
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"id="drop-dn">Industrial 
+              <!-- <b class="caret"></b> -->
+            </a>
+          <!-- <ul class="dropdown-menu">
+            <li class="kopie"><a href="#">Dropdown2</a></li>
+            <li><a href="#">Dropdown2 Link 1</a></li>
+            <li><a href="#">Dropdown2 Link 2</a></li>
+            <li><a href="#">Dropdown2 Link 3</a></li> -->
+            <!-- <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown2 Link 4</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.3</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 4.4</a></li>
+              </ul>
+            </li> -->
+        <!--     <li class="dropdown dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
+              <ul class="dropdown-menu">
+                <li class="kopie"><a href="#">Dropdown Link 5</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.1</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.2</a></li>
+                <li><a href="#">Dropdown2 Submenu Link 5.3</a></li>
+                <li class="dropdown dropdown-submenu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+                  <ul class="dropdown-menu">
+                    <li class="kopie"><a href="#">Dropdown2 Submenu Link 5.4</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.1</a></li>
+                    <li><a href="#">Dropdown2 Submenu Link 5.4.2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+            <!-- </ul> -->
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+
+
+
+
+  <!-- tooltip end -->
+
+
+
+
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="modal-title">Basic</h3>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center">Framed Structure(column Structure)(pcc+pedastail+footing+column)</h5>
+          <!-- <h5 class="text-center">Material Specifications</h5> -->
+          <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Materials</th>
+                <th>Specifications</th>
+                <!-- <th class="text-right">Mean</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Flooring</td>
+                <td>Vitrified & Anti-skid ceramic tiles</td>
+                <!-- <td class="text-right">45001</td> -->
+              </tr>
+              <tr><td>Door</td>
+                <td>Teak wood & Hard wood</td>
+                <!-- <td class="text-right">76455</td> -->
+              </tr>
+              <tr><td>Window </td>
+                <td>Hard wood</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Kitchen counter </td>
+                <td>Granite slab(200mm thick)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Sink</td>
+                <td>Stainless steel</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plumbing </td>
+                <td>CPVC & UPVC</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Bathroom fixtures</td>
+                <td>CP fixtures(Jaguar)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Electrical </td>
+                <td>Havells,Vgaurd, finolex</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Solar</td>
+                <td>Provision</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plastering</td>
+                <td>one coat/Two coat</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Paint</td>
+                <td>Asian paint</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Cement</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Steel</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+
+            </tbody>
+              
+          </table>
+          <div class="form-group">
+            <!-- <input type="button" class="btn btn-warning btn-sm pull-right" value="Reset"> -->
+        <span>Only for basic Elevation</span>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+<!-- semidelux popup start -->
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="modal-title">SEMI-DELUX</h3>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center">Framed Structure(column structure)<br>(pcc+footing+pedastail+column)</h5>
+          <!-- <h5 class="text-center">Material Specifications</h5> -->
+          <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Materials</th>
+                <th>Specifications</th>
+                <!-- <th class="text-right">Mean</th> -->
+              </tr>
+            </thead>
+                        <tbody>
+              <tr><td>Flooring</td>
+                <td>Vitrified & Anti-skid ceramic tiles</td>
+                <!-- <td class="text-right">45001</td> -->
+              </tr>
+              <tr><td>Door</td>
+                <td>Teak wood & Hard wood</td>
+                <!-- <td class="text-right">76455</td> -->
+              </tr>
+              <tr><td>Window</td>
+                <td>Hard wood/Teak wood</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Kitchen counter </td>
+                <td>Granite slab(200mm thick)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Sink</td>
+                <td>Stainless steel</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plumbing </td>
+                <td>CPVC & UPVC</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Bathroom fixtures</td>
+                <td>CP fixtures(Jaguar)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Electrical </td>
+                <td>Havells,Vgaurd, finolex</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Solar</td>
+                <td>Provision</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plastering</td>
+                <td>one coat/Two coat</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Paint</td>
+                <td>Asian paint</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Cement</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Steel</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+
+            </tbody>
+              
+          </table>
+          </table>
+          <span>Only for basic Elevation</span>
+          <div class="form-group">
+            <!-- <input type="button" class="btn btn-warning btn-sm pull-right" value="Reset"> -->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+<!-- semidelux popup end -->
+
+<!-- Delux popup start -->
+<div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="modal-title">Delux</h3>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center">Framed Structure(column structure) with Kitchen cabinet.
+           <br>(pcc+footing+pedastail+column)</h5>
+          <!-- <h5 class="text-center">Material Specifications</h5> -->
+          <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Materials</th>
+                <th>Specifications</th>
+                <!-- <th class="text-right">Mean</th> -->
+              </tr>
+            </thead>
+                        <tbody>
+              <tr><td>Flooring</td>
+                <td>Vitrified & Anti-skid ceramic tiles</td>
+                <!-- <td class="text-right">45001</td> -->
+              </tr>
+              <tr><td>Door</td>
+                <td>Teak wood & Hard wood</td>
+                <!-- <td class="text-right">76455</td> -->
+              </tr>footi
+              <tr><td>Window </td>
+                <td>Hard wood</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Kitchen counter </td>
+                <td>Granite slab(200mm thick)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Sink</td>
+                <td>Stainless steel</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plumbing </td>
+                <td>CPVC & UPVC</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Bathroom fixtures</td>
+                <td>CP fixtures(Jaguar)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Electrical </td>
+                <td>Havells,Vgaurd, finolex</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Solar</td>
+                <td>Provision</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plastering</td>
+                <td>one coat/Two coat</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Paint</td>
+                <td>Asian paint</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Cement</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Steel</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+
+            </tbody>
+              
+          </table>
+          </table>
+          <div class="form-group">
+            <!-- <input type="button" class="btn btn-warning btn-sm pull-right" value="Reset"> -->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+<!-- Delux popup end --> 
+
+
+<!-- Cetra Delux popup start -->
+
+<div class="modal fade" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="modal-title">Ultra Delux</h3>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center">Framed Structure(column structure) with (Kitchen cabinet+Tv cabinet+wardrobe).<br>(pcc+footing+pedastail+column)</h5>
+          <!-- <h5 class="text-center">Material Specifications</h5> -->
+          <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Materials</th>
+                <th>Specifications</th>
+                <!-- <th class="text-right">Mean</th> -->
+              </tr>
+            </thead>
+                        <tbody>
+              <tr><td>Flooring</td>
+                <td>Vitrified & Anti-skid ceramic tiles</td>
+                <!-- <td class="text-right">45001</td> -->
+              </tr>
+              <tr><td>Door</td>
+                <td>Teak wood & Hard wood</td>
+                <!-- <td class="text-right">76455</td> -->
+              </tr>
+              <tr><td>Window </td>
+                <td>Hard wood</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Kitchen counter </td>
+                <td>Granite slab(200mm thick)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Sink</td>
+                <td>Stainless steel</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plumbing </td>
+                <td>CPVC & UPVC</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Bathroom fixtures</td>
+                <td>CP fixtures(Jaguar)</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Electrical </td>
+                <td>Havells,Vgaurd, finolex</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Solar</td>
+                <td>Provision</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Plastering</td>
+                <td>one coat/Two coat</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Paint</td>
+                <td>Asian paint</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Cement</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+              <tr><td>Steel</td>
+                <td>As per client</td>
+                <!-- <td class="text-right">39097</td> -->
+              </tr>
+
+            </tbody>
+              
+          </table>
+          </table>
+          <div class="form-group">
+            <!-- <input type="button" class="btn btn-warning btn-sm pull-right" value="Reset"> -->
+            <div class="clearfix"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default " data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+<!-- Cetra Delux popup end-->
+
+<!-- new container start -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="ui header">
+              <span class="segment_heading">Services we provide</span>
+              <span class="sub header">
+                <span class="segment_sub_heading">Sprint Constructions provides step by step solution for all services for your dream home construction.
+                </span>
+              </span>
+            </h2>
+            <div class="collections-grid row">
+              <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/architecture.png'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Architecture
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">We design houses which suit taste of your individual needs to build your home, this includes everything fron 3D elevation and finishes of your house.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                                                          
+                  </a>                                                                               
+                </div>
+      </div>
+
+      <!-- 2nd -->
+                    <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/design.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Designing
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">Based on the architectural drawings, we design the structural, working drawings and all other details of your house.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 3r one -->
+                <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/approval.png'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Government Approvals
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">We understand all the bye loss and we get all the required permissions and approvals to construction of your house from government.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 4th one -->
+                      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/process.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Construction process
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">We have vast experience in the field of construction. Sprint construction famous for quality and timely  delivery, always work with quality.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 5th one -->
+          
+                      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/electrical.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Electrical 
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">We will take care of all electrical work including all the government approvals for energing your house with both internal and external electrical work.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 6th -->
+          
+                      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/plumbing.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Plumbing 
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">Apart from providing complete plumbing solutions from sprint constructions.</div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 7th -->
+      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/inteor.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Interior Design
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">It is the important step to your house our architects and assist you to choose the right interiors to make complete your home.</div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 8th -->
+      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/landscape.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Landscaping
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">Greenary adds to the beauty of any house with the help of expert consultants,we help provide the best solution to enhance the visual appeal of you house.</div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 8th -->
+      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/handover.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Key-Handover
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">Your dream home handover to you within 248 days.With lot of smile.</div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+      <!-- 9th -->
+      <div class="col-lg-6 mbot">
+                <div class="ui fluid card">
+                  <a href="#">
+                    <div class="row">
+                      <div class="col-s-6">
+                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/resizeimages/service.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                      </div>
+                      <div class="col-s-10">
+                        <div class="row">
+                          <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                            <div class="heading bold ln20">
+                              Services
+                            </div>
+                            <div class="zblack fontsize4 description mt5  hp ">Sprint Constructions always tuch with clients.If any problem accures in your house sprint provide a solutions.
+                            <p>Call: 9538525456</p>
+                            </div>
+                          </div>
+                        </div> 
+                      </div>
+                    </div>                                                              
+                  </a>                                                                   
+                </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- new container end -->
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-3 offset-md-1">
+            <a class="nav-link" href="job_index.html"><img src="images/resizeimages/sprint_logo.png" width="200px" height="100px" style="position: relative;bottom: 9px;"> </a>
+                <!-- <h5 class="title">Footer Content</h5> -->
+                <p>It gives complete vastu design.It creates energy in the house makes improvements, the positive energy of the inhabitants of the home live in,will make it a better place to live.</p>
+                <p style="position: relative;font-weight: bold;">Sprint Constructions</p>
+            </div>
+            <!--/.First column-->
+            <hr class="hidden-md-up">
+
+            <!--Second column-->
+            <div class="col-md-2 offset-md-1">
+                <!-- <h5 class="title">Links</h5>
+                <ul>
+                    <li><a href="#!">Link 1</a></li>
+                    <li><a href="#!">Link 2</a></li>
+                    <li><a href="#!">Link 3</a></li>
+                    <li><a href="#!">Link 4</a></li>
+                </ul> -->
+            </div>
+            <!--/.Second column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Third column-->
+            <div class="col-md-2">
+                <h5 class="title">Bangalore</h5>
+                <ul>
+                    <li><a href="#!">#47 9th main 4th cross</a></li>
+                    <li><a href="#!">Jayanagar 9th bloock</a></li>
+                    <li><a href="#!">Bangaloore-560069</a></li>
+                    <li><a href="#!">Contact: 9538525456</a></li>
+                    <li><a href="#!">Email: sprint1818@yahoo.com</a></li>
+                </ul>
+            </div>
+            <!--/.Third column-->
+
+            <hr class="hidden-md-up">
+
+            <!--Fourth column-->
+            <div class="col-md-2">
+                <h5 class="title">Register office Mysore</h5>
+                <ul>
+                    <li><a href="#!">#mig55 Ramakrishna Nagara </a></li>
+                    <li><a href="#!">A and B Block Mysore-570022</a></li>
+                    <li><a href="#!">Contact: 9538525456</a></li>
+                    <li><a href="#!">Email: sprintinfo1818@gmail.com</a></li>
+                    
+                    <div style="position: relative;top: 3.3em;">
+                    <h5 class="title" style="position: relative; top: 0.7em;">Developed By:</h5>
+                    <li><a href="#!">Future Design Technology</a></li>
+                    <li><a href="#!">futuredesign4@gmail.com</a></li></div>
+
+                </ul>
+            </div>
+            <!--/.Fourth column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+   
+    <hr>
+
+    <!--Social buttons-->
+    <div class="social-section">
+        <ul>
+            <li><a class="btn-floating btn-small btn-fb" href="https://www.facebook.com/sprint-constructions-237456009999189/"><img src="images/resizeimages/facebook.png" width="50px" height="50px"> </i></a></li>
+            <li><a class="btn-floating btn-small btn-tw" href="https://mobile.twitter.com/sprintcons1818"><img src="images/resizeimages/twitter.png" width="50px" height="50px"></a></li>
+            
+        </ul>
+    </div>
+    <!--/.Social buttons-->
+
+    <!--Copyright-->
+
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="https://www.sprintconstuctions.net"> www.sprintconstuctions.net </a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- popup start -->
+    <!-- BEGIN # MODAL LOGIN -->
+
+</body>
+</html>
+<script>
+
+
+
+
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

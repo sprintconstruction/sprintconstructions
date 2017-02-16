@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+  <title>Users List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="dist/css/bootstrap-select.css">-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/registration.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+  <!-- Template styles -->
+  <style>
+    /* TEMPLATE STYLES */
+
+    p#text-description {
+      font-family: sans-serif;
+      font-size: 14px;
+      position: relative;
+      top: 8px;
+    }
+    span#sall-font {
+      position: relative;
+      font-size: 13px;
+    }
+
+    main {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .widget-wrapper {
+      padding-bottom: 2rem;
+      //  border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .reviews {
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -2px;
+    }
+
+    .price .tag {
+      margin: 0;
+    }
+
+    .list-group
+    {
+      margin-top: -20px;  
+      }/* 
+      .col-sm-6
+      {
+        right: 30%;
+        top: 40%;
+    }
+    .col-lg-7
+    {
+ right: 8%;
+}*/
+
+</style>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+      <!-- Collapse button-->
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+        <img src="images/uso.png" width=20 height=20 alt="USO" style="position: relative; right: 2em;">
+        <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;">UNITED STATES OF OPPORTUNITIES</a>
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div class="row">
+        <div class="collapse navbar-toggleable-xs" id="collapseEx">
+          <ul class="nav navbar-nav">
+            <li class="nav-item active">
+              <div >
+                <a href="index.html"><img src="images/uso_logo.png" height="40" alt="USO" class="hidden-xs"></a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link blue-text hidden-xs" href="index.html"  style="font-size: medium;">Home</a>
+            </li>
+
+                         <!--    <li class="nav-item">
+                                <a class="nav-link blue-text hidden-xs" href="manage_employee.html"  style="font-size: medium;">Manage Users</a>
+                              </li>  -->
+                              <li class="nav-item">
+                                <span style="position: relative;left: 389%;">
+                                  <div class="dropdown">
+
+                                    <!--Trigger-->
+                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</button>
+
+                                    <!--Menu-->
+                                    <div class="dropdown-menu dropdown-primary" aria-labelledby="dropdownMenu1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                      <a class="dropdown-item" href="manage_employee.html">Employer</a>
+                                      <a class="dropdown-item" href="manage_users.html">Users</a>
+                                      <a class="dropdown-item" href="advertisement_management.html">Advertisement</a>
+                                      <a class="dropdown-item" href="#">Notice</a>
+                                      <a class="dropdown-item" href="#">Web crawler</a>
+
+                                    </div>
+                                  </div>
+
+                                </span>
+                              </li>
+                              <li class="nav-item"> 
+                                <span style="position: relative;left: 309%;">
+                                  <a class="btn btn-email btn-lg btn-primary">
+                                    <i class="fa fa-envelope"></i>
+                                  </a>
+                                  <span class="counter red-text" id="msssage-text">22</span>
+                                  <a class="btn glyphicon glyphicon-bell btn-primary">
+                                  </a>
+                                  <span class="counter red-text" id="msssage-text">13</span>
+
+                                </span>
+                              </li>
+                            </ul>
+                            <div class="btn-group" style="float: right;margin-right: 100px;">
+                             <img class="img-circle" src="images/user.jpg" height="40" width="40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                             <div class="dropdown-menu">
+                              <a class="dropdown-item">John Miller</a>
+                              <a class="dropdown-item">Admin</a>
+                              <div class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="index.html">Logout</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </nav>
+
+                    <!--/.Navbar-->
+
+                  </header>
+                  <br /><br />
+                  <main>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+
+
+                        </div>
+                        <div class="col-lg-1">
+                        </div>      
+                        <div class="row">
+
+                          <div class="col-lg-10" >
+                            <div style="float:right;">
+                             <a href="add_employee.html  " >
+                               <i class="fa fa-user-plus " aria-hidden="true" > Add User</i>
+                             </a>
+                           </div>
+                           <label class="well col-lg-12" style="background-color: #66b3ff; height: 55px;"><center> <h2><b>Users List</b></h2></center> </label>
+                           <table class="table">
+                             <thead > 
+                               <tr>
+                                 <th>SL No</th>
+                                 <th>Name</th>
+                                 <th>Last Name</th>
+                                 <th>Email</th>
+                                 <th>Location</th>
+                                 <th>Type of User</th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                               <tr>
+                                 <td>1</td>
+                                 <td>John</td>
+                                 <td>Smith</td>
+                                 <td>Smith@gmail.com</td>
+                                 <td>Engaland</td> 
+                                 <td>Company</td>
+                                 <td>
+                                   <a href="user_view.html"><button class="btn btn-success"  >View</button></a>
+                                   <a href="edit_user.html"><button class="btn btn-info">Edit</button></a>
+                                   <button class="btn btn-danger">Delete</button>
+                                 </td>
+                               </tr>
+                               <tr>
+                                <td>2</td>
+                                <td>Smith</td>
+                                <td>John</td>
+                                <td>Smith@gmail.com</td>
+                                <td>South Africa</td>
+                                <td>Company</td> 
+                                <td>
+                                  <a href="user_view.html"><button class="btn btn-success"  >View</button></a>
+                                  <a href="edit_user.html"><button class="btn btn-info">Edit</button></a>
+                                  <button class="btn btn-danger">Delete</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>John</td>
+                                <td>Smith</td>
+                                <td>Smith@gmail.com</td>
+                                <td>Engaland</td> 
+                                <td>Consultancy</td>
+                                <td>
+                                 <a href="user_view.html"><button class="btn btn-success"  >View</button></a>
+                                 <a href="edit_user.html"><button class="btn btn-info">Edit</button></a>
+                                 <button class="btn btn-danger">Delete</button>
+                               </td>
+                             </tr>
+                             <tr>
+                              <td>4</td>
+                              <td>Smith</td>
+                              <td>John</td>
+                              <td>Smith@gmail.com</td>
+                              <td>South Africa</td>
+                              <td>Consultancy</td> 
+                              <td>
+                               <a href="user_view.html"><button class="btn btn-success"  >View</button></a>
+                               <a href="edit_user.html"><button class="btn btn-info">Edit</button></a>
+                               <button class="btn btn-danger">Delete</button>
+                             </td>
+                           </tr>
+
+                         </tbody>
+                       </table>
+                     </div>
+                   </div>
+                   <div class="col-lg-1">
+                   </div>
+
+                 </div>
+               </div>
+             </main>
+
+             <!--/.Panel-->
+
+             <!--Footer-->
+             <footer class="page-footer center-on-small-only">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12  hidden-lg-down">
+                    <div class="col-md-1"><img src="images/uso_1.png"></div>
+                    <div class="col-md-4" style="padding: 24px">We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa, job vacancies in Africa and 2016-17 Africa jobs and recruitment opportunities</div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <div class="footer-copyright" >
+                <div class="container-fluid">
+                  &copy; 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+                </div>
+              </div>
+            </footer>
+            <!--/.Footer-->
+
+
+            <!-- SCRIPTS -->
+
+            <!-- JQuery -->
+            <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="js/tether.min.js"></script>
+
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="js/mdb.min.js"></script>
+
+            <script>
+
+              $(window).scroll(function () {
+                var threshold = 50;
+                $("#test").html($(window).scrollTop());
+                if ($(window).scrollTop() >= threshold)
+                  $('#sidebar').addClass('fixed');
+                else
+                  $('#sidebar').removeClass('fixed');
+                var check = $("#content").height() - $("#sidebar").height()-21;
+                if ($(window).scrollTop() >= check)
+                  $('#sidebar').addClass('bottom');
+                else
+                  $('#sidebar').removeClass('bottom');
+              });
+
+            </script>
+
+            <style type="text/css">
+             div#text-block {
+              position: relative; 
+              /*border: 1px solid; */
+              box-shadow: 2px 2px 5px #888888;
+            } 
+/*.fa .fa-suitcase {
+    font-size: 50px;
+  }*/
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>-->
+</body>
+
+</html>

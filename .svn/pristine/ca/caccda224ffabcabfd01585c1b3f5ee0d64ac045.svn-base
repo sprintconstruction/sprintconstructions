@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>USO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+        .navbar {
+            background-color: transparent;
+        }
+        .top-nav-collapse {
+            background-color: #4285F4;
+        }
+        footer.page-footer {
+            background-color: #4285F4;
+        }
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        /* Carousel*/
+        .carousel {
+            height: 50%;
+        }
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        .carousel-inner {
+            height: 100%;
+        }
+        .carousel-item:nth-child(1) {
+            background-image: url("images/s1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .carousel-item:nth-child(2) {
+            background-image: url("images/s2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carousel-item:nth-child(3) {
+            background-image: url("images/s3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            /*            .carousel-item active{
+                            height: 200px;
+                        }*/
+                        /*Caption*/
+                        .flex-center {
+                            color: #fff;
+                        }
+                        /*auto complete*/
+                        #ui-id-1 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                            font-style: bold;
+                        }
+                        #ui-id-2 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                            font-style: bold;
+                        }
+                        #hr1 {
+                            border: 0;
+                            clear:both;
+                            display:block;
+                            background-color:#4285f4;
+                            height: 3px;
+                        }
+                        #hr2 {
+                            border: 0;
+                            clear:both;
+                            display:block;
+                            background-color:#cae8e6;
+                            height:  0.1em;
+                        }
+                        #ui-id-1 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                        }
+                        #ui-id-2 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+
+                        <!-- Collapse button-->
+                        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+
+                            <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;"><img src="images/uso_logo.png" height="50" width="250"></a>
+
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+
+
+                        <!--Collapse content-->
+                        <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                            <!--Navbar Brand-->
+                            <!--<a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>-->
+                            <!--Links-->
+                            <div  class="col-lg-6">
+                                <ul class="nav navbar-nav col-lg-8">
+                                    <li class="nav-item">
+                                        <div style="float : left; ">
+                                            <a href="index.html"><img src="images/uso_logo5.png" height="40" alt="USO" class="hidden-xs"></a>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                                 <div class="col-lg-1" style="text-align: left; margin-top: 10px;">
+                                </div>
+                                <div class="col-lg-1" style="text-align: left; margin-top: 10px;"><a href="#">about</a> 
+                                </div>
+                            </div>
+                            <div class="col-lg-6" style="text-align: left ;"> 
+                                <div class="col-lg-4" style="text-align: right; "> 
+                                </div>
+                                <div  style="float: right; margin-top: 10px;"> 
+                                    <div id="google_translate_element"></div><script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                                    }
+                                </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                            </div>
+                            <div class="col-lg-2" style="float:right; margin-top: 8px;"><div class="btn-group">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</button>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="login_user.html">User</a>
+                                    <a class="dropdown-item" href="login_user_premium.html">Premium User</a>
+                                    <a class="dropdown-item" href="login_admin.html">Admin</a>
+                                    <a class="dropdown-item" href="login_employer.html">Employer</a>
+                                    <a class="dropdown-item" href="login_p_employer.html">Premium Employer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Collapse content-->
+
+
+
+            </nav>
+            <!--/.Navbar-->
+
+            <br>
+            <br>   <br>  
+            <br>   
+            <div class="container">
+                <div class="row">
+                    <div class="card">
+
+                        <!--Card image-->
+                        <div class="view overlay hm-white-slight">
+
+                        </div>
+                        <!--/.Card image-->
+
+                        <!--Card content-->
+                        <div class="card-block">
+                            <!--Title-->
+                            <div class="col-lg-12" style="text-align: center">
+                            <div class="col-lg-1">
+                                
+                            </div>
+                                <div class="col-lg-2  col-xs-4">
+                                    <a href="job_index.html"> <button type="button" class="btn btn-default" style="width: 50px;height: 50px;padding: 2px;"> <i class="fa fa-laptop fa-3x"></i></button>
+                                        <p><b style="color: #2bbbad">Jobs</b></p></a></div>
+                                        <div class="col-lg-2  col-xs-4">
+                                            <a href="business_index.html"><button type="button" class="btn btn-secondary" style="width: 50px;height: 50px;padding: 2px;"> <i class="fa fa-suitcase fa-3x"></i></button>
+                                                <p><b style="color: #aa66cc">Business</b></p></a></div>
+                                                <div class="col-lg-2  col-xs-4">
+                                                    <a href="scholarship_index.html"><button type="button" class="btn btn-success" style="width: 50px;height: 50px;padding: 2px;"> <i class="fa fa-university fa-3x"></i></button>
+                                                        <p><b style="color: #00c851">Scholarship</b></p></a></div>
+                                                        <div class="col-lg-2  col-xs-4">
+                                                            <a href="grant_index.html"> <button type="button" class="btn btn-info" style="width: 50px;height: 50px;padding: 2px;"> <i class="fa fa-sticky-note-o fa-3x"></i></button>
+                                                                <p><b style="color: #33b5e5">Grants</b></p></a></div>
+                                                                <div class="col-lg-2  col-xs-4">
+                                                                    <a href="training_index.html"> <button type="button" class="btn btn-warning" style="width: 50px;height: 50px;padding: 2px;"> <i class="fa fa-object-group fa-3x"></i></button>
+                                                                        <p><b style="color: #ff8800">Training</b></p></a></div>
+                                                                    </div>
+                                                                    <hr id="hr2">
+                                                                    <!--Text-->
+                                                                    <div class="col-lg-12">
+                                                                        <center><b style="color: #4285f4">Alert....!!!</b></center>
+                                                                        <!--<marquee><a href="#">MTN  : Walk-in for freshers on 27/01/2017</a></marquee>-->
+                                                                        <center><p><a href="#" style="color: red">Nestle Africa : Big Walk-in drive for experienced professionals; African Institute of Safety Professionals  : Offering 20% discounts on Java courses</a></p></center> 
+                                     
+                                            </div>
+                                        </div>
+                                        <!--/.Card content-->
+                                    </div>
+
+                            </div></div>
+
+                            <!--Carousel Wrapper-->
+                            <div class="container">
+                                <div class="row">
+                                    <p><b>Search job openings</b></p>
+                                    <hr id="hr1"/>
+                                    <div class="col-lg-5 col-xs-10">
+                                        <form class="form-inline">
+                                            <div class="col-lg-12"><div class="md-form form-group">
+                                                <link rel="stylesheet" href="css/jquery-ui.css">
+                                                <script>
+                                                    $(function () {
+                                                        var availableTags = [
+                                                        "PHP Developer",
+                                                        "Java Developer",
+                                                        "Asp Developer",
+                                                        "Admin",
+                                                        "C Developer",
+                                                        "C++ Developer",
+                                                        "Clojure Developer",
+                                                        "COBOL Developer",
+                                                        "ColdFusion Developer",
+                                                        "Erlang Developer",
+                                                        "Fortran Developer",
+                                                        "Groovy Developer",
+                                                        "Haskell Developer",
+                                                        "JavaScript Developer",
+                                                        "Lisp Developer",
+                                                        "Perl Developer",
+                                                        "Python Developer",
+                                                        "Ruby Developer",
+                                                        "Scala Developer",
+                                                        "Scheme Developer"
+                                                        ];
+                                                        $("#tags").autocomplete({
+                                                            source: availableTags
+                                                        });
+                                                    });
+                                                </script>
+                                                <input type="text" id="tags" class="form-control validate" placeholder="Type Keyword" style="border: 1px solid #a3d7e3;width: 130%;border-radius: 10px">
+                                            </div></div>
+                                            <div class="col-lg-12"><div class="md-form form-group">
+                                                <link rel="stylesheet" href="css/jquery-ui.css">
+                                                <script>
+                                                    $(function () {
+                                                        var availableTags = [
+                                                        "Algeria ",
+                                                        "Angola",
+                                                        "Benin ",
+                                                        "Botswana ",
+                                                        "Burkina Faso",
+                                                        "Burundi",
+                                                        "Cameroon",
+                                                        "The Republic of Cabo Verde",
+                                                        "Chad ",
+                                                        "Comoros ",
+                                                        "Democratic Republic of Congo",
+                                                        "Djibouti",
+                                                        "Egypt ",
+                                                        "Eritrea",
+                                                        "Ethiopia",
+                                                        "Gabon ",
+                                                        "Gambia ",
+                                                        "Ghana ",
+                                                        "Guinea ",
+                                                        "Guinea-Bissau ",
+                                                        "Kenya ",
+                                                        "Lesotho ",
+                                                        "Liberia ",
+                                                        "Libya ",
+                                                        "Madagascar ",
+                                                        "Malawi ",
+                                                        "Mali ",
+                                                        "Mauritania ",
+                                                        "Mauritius ",
+                                                        "Morocco ",
+                                                        "Mozambique ",
+                                                        "Namibia ",
+                                                        "Niger ",
+                                                        "Africa ",
+                                                        "Rwanda ",
+                                                        "Republic Arab Saharawi Democratic ",
+                                                        "Sao Tome and Principe",
+                                                        "Senegal",
+                                                        "Seychelles ",
+                                                        "Sierra Leone",
+                                                        "Somalia ",
+                                                        "South Africa ",
+                                                        "South Sudan ",
+                                                        "Sudan",
+                                                        "Swaziland",
+                                                        "Tanzania ",
+                                                        "Togo ",
+                                                        "Tunisia ",
+                                                        "Uganda ",
+                                                        "Zambia  ",
+                                                        "Zimbabwe  "
+                                                        ];
+                                                        $("#location").autocomplete({
+                                                            source: availableTags
+                                                        });
+                                                    });
+                                                </script>
+                                                <br>
+                                                <input type="text" id="location" class="form-control validate" placeholder="Type Location" style="border: 1px solid #a3d7e3;width: 130%;border-radius: 10px">
+                                            </div></div>
+                                            <div class="col-lg-12 col-xs-6 "><br><div class="form-group">
+                                                <a href="job.html" class="btn btn-primary btn-lg  btn-block"  style="width: 330%">Search</a>
+                                            </div></div></form>
+                                        </div>
+
+                                        <div id="carousel-example-1" class="carousel slide carousel-fade col-lg-7" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carousel-example-1" data-slide-to="1"></li>
+                                                <li data-target="#carousel-example-1" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner" role="listbox" >
+                                                <div class="carousel-item active">
+                                                    <div class="flex-center animated fadeInDown">
+                                                        <ul style="height: 200px">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="flex-center animated fadeInDown">
+                                                        <ul style="height: 200px">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="flex-center animated fadeInDown">
+                                                        <ul style="height: 200px">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                                                <span class="icon-prev" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                                                <span class="icon-next" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a></div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <footer class="page-footer center-on-small-only">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12  hidden-lg-down">
+                                                    <div class="col-md-1"><img src="images/uso_1.png"></div>
+                                                    <div class="col-md-4" style="padding: 24px">We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa, job vacancies in Africa and 2016-17 Africa jobs and recruitment opportunities</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="footer-copyright" >
+                                            <div class="container-fluid">
+                                                &copy; 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+                                    <script type="text/javascript" src="js/tether.min.js"></script>
+                                    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                                    <script type="text/javascript" src="js/mdb.min.js"></script>
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+                                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                                </body>
+                                </html>

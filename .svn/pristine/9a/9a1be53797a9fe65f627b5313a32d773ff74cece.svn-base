@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/registration.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+             <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+        p#text-description {
+            font-family: sans-serif;
+            font-size: 14px;
+            position: relative;
+            top: 8px;
+        }
+        span#sall-font {
+            position: relative;
+            font-size: 13px;
+        }
+        main {
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+        .widget-wrapper {
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .reviews {
+            text-align: center;
+            border-top: 1px solid #e0e0e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        .price {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: -2px;
+        }
+        .price .tag {
+            margin: 0;
+        }
+        .list-group
+        {
+            margin-top: -20px;  
+        }
+        hr{
+            height: 20px;
+            border: 1px solid;
+            display: block;
+        }
+        .img-training{
+            height: 250px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+                <img src="images/uso.png" width=20 height=20 alt="USO" style="position: relative; right: 2em;">
+                <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;">UNITED STATES OF OPPORTUNITIES</a>
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="row">
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item active">
+                            <div >
+                                <a href="index.html"><img src="images/uso_logo.png" height="40" alt="USO" class="hidden-xs"></a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link blue-text hidden-xs" href="index.html"  style="font-size: medium;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <span style="position: relative;left: 389%;">
+                                <div class="dropdown">
+                                    <!--Trigger-->
+                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</button>
+                                    <!--Menu-->
+                                    <div class="dropdown-menu dropdown-primary" aria-labelledby="dropdownMenu1" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <a class="dropdown-item" href="manage_employee.html">Employer</a>
+                                        <a class="dropdown-item" href="manage_users.html">Users</a>
+                                        <a class="dropdown-item" href="advertisement_management.html">Advertisement</a>
+                                        <a class="dropdown-item" href="notice.html">Notice</a>
+                                        <a class="dropdown-item" href="#">Web crawler</a>
+                                        <!--<a class="dropdown-item" href="category_management.html">Categories</a>-->
+                                    </div>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="nav-item"> 
+                            <span style="position: relative;left: 309%;">
+                                <a class="btn btn-email btn-lg btn-primary">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                                <span class="counter red-text" id="msssage-text">22</span>
+                                <a class="btn glyphicon glyphicon-bell btn-primary">
+                                </a>
+                                <span class="counter red-text" id="msssage-text">13</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn-group" style="float: right;margin-right: 100px;">
+                        <img class="img-circle" src="images/user.jpg" height="40" width="40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item">John Miller</a>
+                            <a class="dropdown-item">Admin</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-block">
+                        <div class="col-lg-12">
+                            <form class="form-inline">
+                                <div class="col-lg-4 col-xs-10"><div class="md-form form-group">
+                                        <link rel="stylesheet" href="css/jquery-ui.css">
+                                        <script>
+                                                $(function () {
+                                                    var availableTags = [
+                                                        "Sole Proprietorship",
+                                                        "General Partnership",
+                                                        "Limited Partnership",
+                                                        "Limited Liability Partnership (LLP)",
+                                                        "Limited Liability Limited Partnership (LLLP)",
+                                                        "Corporation",
+                                                        "Nonprofit Corporation",
+                                                        "Limited Liability Company (LLC)",
+                                                        "Massachusetts Trust",
+                                                        "Trust",
+                                                        "Joint Venture",
+                                                        "Tenants in Common",
+                                                        "Municipality",
+                                                        "Association",
+                                                        "PHP Developer",
+                                                            "Java Developer",
+                                                            "Asp Developer",
+                                                            "Admin",
+                                                            "C Developer",
+                                                            "C++ Developer",
+                                                            "Clojure Developer",
+                                                            "COBOL Developer",
+                                                            "ColdFusion Developer",
+                                                            "Erlang Developer",
+                                                            "Fortran Developer",
+                                                            "Groovy Developer",
+                                                            "Haskell Developer",
+                                                            "JavaScript Developer",
+                                                            "Lisp Developer",
+                                                            "Perl Developer",
+                                                            "Python Developer",
+                                                            "Ruby Developer",
+                                                            "Scala Developer",
+                                                            "Scheme Developer"
+                                                    ];
+                                                    $("#tags").autocomplete({
+                                                        source: availableTags
+                                                    });
+                                                });
+                                        </script>
+                                        <input type="text" id="tags" class="form-control validate" placeholder="Type Keyword" style="border: 1px solid #a3d7e3;width: 110%;border-radius: 10px">
+                                    </div></div>
+                                <div class="col-lg-4  col-xs-10"><div class="md-form form-group">
+                                        <link rel="stylesheet" href="css/jquery-ui.css">
+                                        <script>
+                                            $(function () {
+                                                var availableTags = [
+                                                    "Algeria ",
+                                                    "Angola",
+                                                    "Benin ",
+                                                    "Botswana ",
+                                                    "Burkina Faso",
+                                                    "Burundi",
+                                                    "Cameroon",
+                                                    "The Republic of Cabo Verde",
+                                                    "Chad ",
+                                                    "Comoros ",
+                                                    "Democratic Republic of Congo",
+                                                    "Djibouti",
+                                                    "Egypt ",
+                                                    "Eritrea",
+                                                    "Ethiopia",
+                                                    "Gabon ",
+                                                    "Gambia ",
+                                                    "Ghana ",
+                                                    "Guinea ",
+                                                    "Guinea-Bissau ",
+                                                    "Kenya ",
+                                                    "Lesotho ",
+                                                    "Liberia ",
+                                                    "Libya ",
+                                                    "Madagascar ",
+                                                    "Malawi ",
+                                                    "Mali ",
+                                                    "Mauritania ",
+                                                    "Mauritius ",
+                                                    "Morocco ",
+                                                    "Mozambique ",
+                                                    "Namibia ",
+                                                    "Niger ",
+                                                    "Nigeria ",
+                                                    "Rwanda ",
+                                                    "Republic Arab Saharawi Democratic ",
+                                                    "Sao Tome and Principe",
+                                                    "Senegal",
+                                                    "Seychelles ",
+                                                    "Sierra Leone",
+                                                    "Somalia ",
+                                                    "South Africa ",
+                                                    "South Sudan ",
+                                                    "Sudan",
+                                                    "Swaziland",
+                                                    "Tanzania ",
+                                                    "Togo ",
+                                                    "Tunisia ",
+                                                    "Uganda ",
+                                                    "Zambia  ",
+                                                    "Zimbabwe  "
+                                                ];
+                                                $("#location").autocomplete({
+                                                    source: availableTags
+                                                });
+                                            });
+                                        </script>
+                                        <input type="text" id="location" class="form-control validate" placeholder="Type Category" style="border: 1px solid #a3d7e3;width: 110%;border-radius: 10px">
+                                    </div></div>
+                                <div class="col-lg-4  col-sm-10"><div class="form-group"><p></p>
+                                        <a href="business.html" class="btn btn-primary btn-lg  btn-block">Search</a>
+                                    </div></div></form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="col-lg-12 well" >
+               
+                <div class="row" >
+                    <a href="advertise.html" style="float: right"><button type="button" class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add new Advirtisement</button></a>
+                    <!--Card-->
+                    <div class="card col-lg-12">
+                        <div class="card-block" style="border-bottom: 1px solid #33b5e5">
+                            <div class="card col-lg-2" style="border-right: 1px solid #8bc34a">
+                                <div class="card-header #8bc34a light-green white-text">
+                                    PHP courses
+                                </div>
+                                <div class="card-block" style="border: 1px solid #8bc34a">
+                                    <h4 class="card-title">Hurry UP</h4>
+                                    <img  src="images/php_course.jpg" class="img-thumbnail img-training" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                                    <img src="images/courses.png" class="img-thumbnail img-training" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                                </div> 
+                                <a href="view_advertise.html"><button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button></a>
+                                <a href="advertise_edit.html"> <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="card col-lg-2" style="border-right : 1px solid #8bc34a">
+                                <div class="card-header #8bc34a light-green white-text">
+                                    JAVA courses
+                                </div>
+                                <div class="card-block" style="border: 1px solid #8bc34a">
+                                    <h4 class="card-title">Enroll Today</h4>
+                                    <img src="images/java_course1.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                                    <img src="images/java1.png" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                                </div> 
+                                <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="card col-lg-2" style="border-right:  1px solid #8bc34a">
+                                <div class="card-header #8bc34a light-green white-text">
+                                    Job fair...!
+                                </div>
+                                <div class="card-block" style="border: 1px solid #8bc34a">
+                                    <h4 class="card-title">Send Resume</h4>
+                                    <img src="images/job_fair1.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                                    <img src="images/job_fair2.png" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                                </div> 
+                                <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                            </div><div class="card col-lg-2" style="border-right : 1px solid #8bc34a">
+                            <div class="card-header #8bc34a light-green white-text">
+                                Jobs for You
+                            </div>
+                            <div class="card-block" style="border: 1px solid #8bc34a">
+                                <h4 class="card-title">Apply soon</h4>
+                                <img src="images/joba.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                                <img src="images/jobb.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                            </div> 
+                            <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                        </div><div class="card col-lg-2" style="border-right: 1px solid #8bc34a">
+                        <div class="card-header #8bc34a light-green white-text">
+                            Training courses
+                        </div>
+                        <div class="card-block" style="border: 1px solid #8bc34a">
+                            <h4 class="card-title">Enroll Today</h4>
+                            <img src="images/training1.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                            <img src="images/training2.png" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                        </div> 
+                        <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                        <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                    </div><div class="card col-lg-2" style="border-right:  1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        Admin courses
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Hurry UP</h4>
+                        <img src="images/management1.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/management2.png" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="card-block" style="border-bottom: 1px solid #33b5e5">
+                <div class="card col-lg-2" style="border-right:  1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        Teaching
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Apply soon</h4>
+                        <img src="images/teaching1.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/teaching2.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div>
+                <div class="card col-lg-2" style="border-right: 1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        Training courses
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Enroll Today</h4>
+                        <img src="images/training3.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/training4.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div>
+                <div class="card col-lg-2" style="border-right: 1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        PHP courses
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Hurry UP</h4>
+                        <img  src="images/php1.png" class="img-thumbnail img-training" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/php2.jpg" class="img-thumbnail img-training" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div>
+                <div class="card col-lg-2" style="border-right : 1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        JAVA courses
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Enroll Today</h4>
+                        <img src="images/java3.png" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/java4.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div>
+                <div class="card col-lg-2" style="border-right:  1px solid #8bc34a">
+                    <div class="card-header #8bc34a light-green white-text">
+                        Job fair...!
+                    </div>
+                    <div class="card-block" style="border: 1px solid #8bc34a">
+                        <h4 class="card-title">Send Resume</h4>
+                        <img src="images/jobfair3.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                        <img src="images/jobfair4.png" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                    </div> 
+                    <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+                </div><div class="card col-lg-2" style="border-right : 1px solid #8bc34a">
+                <div class="card-header #8bc34a light-green white-text">
+                    Jobs for You
+                </div>
+                <div class="card-block" style="border: 1px solid #8bc34a">
+                    <h4 class="card-title">Apply soon</h4>
+                    <img src="images/job4.jpeg" class="img-thumbnail" alt="Cinque Terre" style="height: 50px ;width: 115px"><br>
+                    <img src="images/job5.jpg" class="img-thumbnail" alt="Cinque Terre" style="height: 90px ;width: 115px">
+                </div> 
+                <button type="button" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-danger"><i class="fa fa-remove" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <!--/.Card content-->
+    </div>
+    <!--/.Card-->
+</div>
+</div></div>
+</main>
+<footer class="page-footer center-on-small-only">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12  hidden-lg-down">
+                <div class="col-md-1"><img src="images/uso_1.png"></div>
+                <div class="col-md-4" style="padding: 24px">We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa, job vacancies in Africa and 2016-17 Africa jobs and recruitment opportunities</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright" >
+        <div class="container-fluid">
+            &copy; 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+    $(window).scroll(function () {
+        var threshold = 50;
+        $("#test").html($(window).scrollTop());
+        if ($(window).scrollTop() >= threshold)
+            $('#sidebar').addClass('fixed');
+        else
+            $('#sidebar').removeClass('fixed');
+        var check = $("#content").height() - $("#sidebar").height() - 21;
+        if ($(window).scrollTop() >= check)
+            $('#sidebar').addClass('bottom');
+        else
+            $('#sidebar').removeClass('bottom');
+    });
+</script>
+<style type="text/css">
+    div#text-block {
+        position: relative; 
+        box-shadow: 2px 2px 5px #888888;
+    } 
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+</html> 

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="dist/css/bootstrap-select.css">-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/registration.css" rel="stylesheet">
+
+  <!-- Template styles -->
+  <style>
+    /* TEMPLATE STYLES */
+
+    p#text-description {
+      font-family: sans-serif;
+      font-size: 14px;
+      position: relative;
+      top: 8px;
+    }
+    span#sall-font {
+      position: relative;
+      font-size: 13px;
+    }
+
+    main {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .widget-wrapper {
+      padding-bottom: 2rem;
+      //  border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .reviews {
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -2px;
+    }
+
+    .price .tag {
+      margin: 0;
+    }
+
+    .list-group
+    {
+      margin-top: -20px;  
+      }/* 
+      .col-sm-6
+      {
+        right: 30%;
+        top: 40%;
+    }
+    .col-lg-7
+    {
+ right: 8%;
+}*/
+
+</style>
+
+</head>
+
+<body>
+
+
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+      <!-- Collapse button-->
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="container">
+        <!--Collapse content-->
+        <div class="collapse navbar-toggleable-xs" id="collapseEx">
+          <!--Navbar Brand-->
+          <!--Links-->
+          <ul class="nav navbar-nav col-lg-9">
+
+                  <!--   <li class="nav-item">
+                        <a class="nav-link blue-text hidden-xs" href="index.html"  style="font-size: large">UNITED STATES OF OPPORTUNITIES</a>                   
+                      </li> -->
+                      <li class="nav-item">
+                        <div >
+                          <a href="index.html"><img src="images/uso_logo.png" height="55" alt="USO" class="hidden-xs"></a>
+                        </div>
+                        
+                      </li>
+                    </ul>
+                    <div id="google_translate_element" style="float: right;"></div><script type="text/javascript">
+                    function googleTranslateElementInit() 
+                    {
+                      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                    }
+                  </script>
+                  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+
+                  </script>
+
+<!--                    <div style="text-align: right">
+                    <a href="#" class="nav-link blue-text" role="button" data-toggle="modal" data-target="#login-modal" >Login</a></div>
+                  </div>-->
+                  <!--/.Collapse content-->
+                </div>
+              </nav>
+
+              <!--/.Navbar-->
+
+            </header>
+            <br /><br />
+            <main>
+              <div class="container">
+               <center > <h1 class="well" style="background-color: #66b3ff;">User Details</h1></center><br>
+               <div class="col-lg-12 well" style="background-color: white;">
+                <div class="row" >
+                  <form action="#">
+                    <div class="col-sm-12" >
+                      <div class="row" ">
+                        <div class="col-sm-6 form-group" >
+                          <div class="md-form">
+                            <i class="fa fa-user prefix"></i>
+                            <input type="text" id="title" class="form-control">
+                            <label for="title">Name</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <div class="md-form">
+                           <i class="fa fa-user prefix"></i>
+                           <input type="text" id="type" class="form-control">
+                           <label for="type">Last Name</label>
+                         </div>
+                       </div>
+                     </div> 
+                     <div class="row">
+                      <div class="col-sm-6 form-group">
+                       <div class="md-form">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="text" id="email" class="form-control">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <div class="md-form">
+                        <input type="password" id="salary" class="form-control">
+                        <label for="salary">Password</label>
+                      </div>
+                    </div>
+                  </div>   
+
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <div class="md-form">
+                        <i class="fa fa-location-arrow prefix" aria-hidden="true"></i>
+                        <input type="text" id="email" class="form-control">
+                        <label for="email">Location</label>
+                      </div>
+                    </div>  
+                       <div class="col-sm-6 form-group">
+                      <div class="md-form">
+                      <i class="fa fa-group prefix" aria-hidden="true"></i>
+                        <input type="text" id="email" class="form-control">
+                        <label for="email">Type of User</label>
+                      </div>
+                    </div>
+                  </div>  
+
+                  <center>
+                    <button type="button" class="btn btn-lg btn-info" style="width: 90px; height: 40px;">ADD</button>  
+                  <!--   <button type="button" class="btn btn-lg btn-info" style="width: 90px; height: 40px;">Preview</button>  -->  
+                  </center>       
+                </div>
+              </form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--/.Panel-->
+
+    <!--Footer-->
+    <footer class="page-footer center-on-small-only primary-color-dark"  id="footer">
+
+      <!--Footer Links-->
+      <div class="container-fluid">
+        <div class="row">
+
+          <!--First column-->
+          <div class="col-md-4 offset-lg-1 hidden-lg-down">
+
+            <img src="images/uso_1.png">
+            United State of Opportunities<br>
+
+            We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa,job vacancies in Africa and 2016 Africa jobs and recruitment opportunities
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <!--/.Footer Links-->
+
+      <hr>
+
+
+      <!--/.Call to action-->
+
+      <!--Copyright-->
+      <div class="footer-copyright" >
+        <div class="container-fluid">
+          © 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+
+        </div>
+      </div>
+      <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script>
+
+      $(window).scroll(function () {
+        var threshold = 50;
+        $("#test").html($(window).scrollTop());
+        if ($(window).scrollTop() >= threshold)
+          $('#sidebar').addClass('fixed');
+        else
+          $('#sidebar').removeClass('fixed');
+        var check = $("#content").height() - $("#sidebar").height()-21;
+        if ($(window).scrollTop() >= check)
+          $('#sidebar').addClass('bottom');
+        else
+          $('#sidebar').removeClass('bottom');
+      });
+
+    </script>
+
+    <style type="text/css">
+     div#text-block {
+      position: relative; 
+      /*border: 1px solid; */
+      box-shadow: 2px 2px 5px #888888;
+    } 
+/*.fa .fa-suitcase {
+    font-size: 50px;
+  }*/
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>-->
+</body>
+
+</html>

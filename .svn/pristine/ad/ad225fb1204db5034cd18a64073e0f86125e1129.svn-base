@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Job Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jobs.html">
+    <!-- <link href="css/city_style.css" rel="stylesheet"> -->
+    <!-- Template styles -->
+    <style rel="stylesheet">
+        /* TEMPLATE STYLES */
+        /* Necessary for full page carousel*/
+        
+        html,
+        body {
+            height: 100%;
+        } 
+        /* Navigation*/
+        
+        .navbar {
+            background-color: transparent;
+        }
+        
+        .top-nav-collapse {
+            background-color: #4285F4;
+        }
+        
+        footer.page-footer {
+            background-color: #4285F4;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        /* Carousel*/
+        
+        .carousel {
+            height: 50%;
+        }
+        
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+        
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        
+        .carousel-item:nth-child(1) {
+            background-image: url("images/banner2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.4;
+            overflow-y: hidden;
+
+
+
+            background-position: center;
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover;*/
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            width:100%;
+            height: 100%;
+        }
+        
+        
+        
+        .flex-center {
+            color: #fff;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item" id="login-but"><a href="#" class="nav-link" role="button" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                </ul>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!--Carousel Wrapper-->
+    <div id="" class="carousel slide carousel-fade" data-ride="" >
+
+
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+
+            <!--First slide-->
+            <div class="carousel-item active img-responsive">
+
+                    <span id="search-group" style="position: relative;top: 6em;">
+                <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn-search" style="width: 12.5em !important; left: 56.7em !important;">Job Type</button>
+
+                    <div class="dropdown-menu" id="dropdown-itm" style="left: 46.3em;">
+                        <a class="dropdown-item" href="#">Ruby Rails</a>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">PHP</a>
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <!-- <a class="dropdown-item" href="#">.Net</a> -->
+                    </div>
+                    <div class="md-form">
+                        <span id="search-ico" style="left: 54em !important"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+                        <input type="text" id="form1" class="form-control" id="search-label" placeholder="Type Location" >
+                        <button class="btn btn-primary" type="submit" id="search-but-sub">Search</button>
+                    </div>
+                </div>
+                <div id="second-search">
+            <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Experience
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Fresher</a>
+        <a class="dropdown-item" href="#">0 - 1 Year </a>
+        <a class="dropdown-item" href="#">1 - 2 years</a>
+        <!-- <a class="dropdown-item" href="#">2 - 3 Years</a> -->
+    </div>
+</div>
+</div>
+                </span>
+
+
+
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <br>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-l-2by3">
+                <h2 class="ui header">
+                    <span class="segment_heading">Features jobs</span>
+                    <span class="sub header">
+                        <span class="segment_sub_heading">Find Your fevorite job in our website
+                        </span>
+                    </span>
+                </h2>
+                <div class="collections-grid row">
+                    <div class="col-l-8 col-s-16 mbot">
+                        <div class="ui fluid card">
+                            <a href="jobs.html">
+                                <div class="row">
+                                    <div class="col-s-7">
+                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/2.jpg'); background-position: center center; display: block;"> 
+                                        </div>
+                                    </div>
+                                    <div class="col-s-9">
+                                        <div class="row">
+                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                <div class="heading bold ln20">
+                                                    New Year Jobs
+                                                </div>
+
+                                                <div class="zblack fontsize4 description mt5  hp ">Bring in the new year in style and your Job</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                          
+                            </a>                                                                               
+                        </div>
+                    </div>
+                    <div class="col-l-8 col-s-16 mbot">
+                        <div class="ui fluid card">
+                            <a href="jobs.html">
+                                <div class="row">
+                                    <div class="col-s-7">
+                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/3.jpg'); background-position: center center; display: block;"> 
+                                        </div>
+                                    </div>
+                                    <div class="col-s-9">
+                                        <div class="row">
+                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                <div class="heading bold ln20">
+                                                    Find your Software job 
+                                                </div>
+
+
+
+                                                <div class="zblack fontsize4 description mt5  hp ">Find the best places to work the happiest time of the year</div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                          
+                            </a>                                                                               
+                        </div>
+                    </div>
+                </div>
+                <h2 class="ui header">
+                    <span class="segment_heading">Jobs</span>
+                    <span class="sub header">
+                        <span class="segment_sub_heading">
+                            Explore curated lists of top Jobs and around World, based on your Education                </span>
+                        </span>
+                    </h2>
+                    <div class="collections-grid row">
+                        <div class="col-l-8 col-s-16 mbot">
+                            <div class="ui fluid card"><a href="jobs.html">
+                                <div class="row">
+                                    <div class="col-s-7">
+                                        <div title="Top Restaurants in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1463395649.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/4.jpg'); background-position: center center; display: block;"> 
+                                        </div>
+                                    </div>
+                                    <div class="col-s-9">
+                                        <div class="row">
+                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                <div class="heading bold ln20">
+                                                    Trending this week
+                                                </div>
+
+                                                <div class="zblack fontsize4 description mt5  hp ">The most popular jobs in town this week</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                          
+                            </a>                                                                               
+
+                        </div>
+                    </div><div class="col-l-8 col-s-16 mbot">
+                    <div class="ui fluid card"><a href="jobs.html">
+                        <div class="row">
+                            <div class="col-s-7">
+                                <div title="Restaurants with Online Reservations in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/3568578bd110f606e5ab1589b48410c1_1463635783.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/5.jpg'); background-position: center center; display: block;"> 
+                                </div>
+                            </div>
+                            <div class="col-s-9">
+                                <div class="row">
+                                    <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                        <div class="heading bold ln20">
+                                            Book a table online on Zomato
+                                        </div>
+
+
+
+                                        <div class="zblack fontsize4 description mt5  hp ">Never wait for a opportunity again. Search your spot with Jobportal</div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                          
+                    </a>                                                                               
+
+                </div>
+            </div><div class="col-l-8 col-s-16 mbot">
+            <div class="ui fluid card"><a href="jobs.html">
+                <div class="row">
+                    <div class="col-s-7">
+                        <div title="Best New Restaurants in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/b8499c7a6b74ddf01497ac8afc86d2e2_1476701306.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/6.jpg'); background-position: center center; display: block;"> 
+                        </div>
+                    </div>
+                    <div class="col-s-9">
+                        <div class="row">
+                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                <div class="heading bold ln20">
+                                    New Jobs you probably tried yet
+                                </div>
+
+
+
+                                <div class="zblack fontsize4 description mt5  hp ">The best new places in town</div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>                                                                          
+            </a>                                                                               
+
+        </div>
+    </div><div class="col-l-8 col-s-16 mbot">
+    <div class="ui fluid card"><a href="jobs.html">
+        <div class="row">
+            <div class="col-s-7">
+                <div title="Best Shisha, Hooka bars, Sheesha bars in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/b2a9346ab0f03785350b96d983841902_1463635759.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/7.jpg'); background-position: center center; display: block;"> 
+                </div>
+            </div>
+            <div class="col-s-9">
+                <div class="row">
+                    <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                        <div class="heading bold ln20">
+                            Hardware
+                        </div>
+
+
+
+                        <div class="zblack fontsize4 description mt5  hp ">Enjoy a great selection of Job</div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>                                                                          
+    </a>                                                                               
+
+</div>
+</div>                        
+</div>
+</div>
+<!-- <div class="col-l-1by3 homepage_order_widget">
+    
+
+</div> -->
+</div>   
+</div>
+</div>
+
+</div>
+
+<!--Content-->
+
+<!-- Quick searches -->
+
+
+<section class="wrapper mtop2 ptop">
+    <h2 class="ui header">
+        <span class="segment_heading">Quick Searches</span>
+        <span class="sub header">
+            <span class="segment_sub_heading">
+                Discover Jobs by type of Domain            </span>
+            </span>
+        </h2>
+        <div class="ui segment eight column doubling padded grid">
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <a href="jobs.html" class="column ta-center start-categories-item">
+                        <img class="ui middle aligned mini image mb5 lazy" src="images/video-poster.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_1.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                        <span id="delivery-text">Software</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="jobs.html" class="column ta-center start-categories-item">
+                        <img class="ui middle aligned mini image mb5 lazy" src="images/hardware.png" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_13.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                        <span id="hardware-text">Hardware</span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="jobs.html" class="column ta-center start-categories-item">
+                        <img class="ui middle aligned mini image mb5 lazy" src="images/marketing.jpeg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_8.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                        <span id="marketing-text">Marketing</span>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="jobs.html" class="column ta-center start-categories-item">
+                        <img class="ui middle aligned mini image mb5 lazy" src="images/teacher.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_9.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                        <span id="teacher-text">Teaching</span>
+                    </a>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+    </section>
+
+
+
+
+    <!--/.Content-->
+    <div class="container">
+        <h2 class="ui header">
+            <span class="segment_heading">
+                Popular countries        </span>
+                <span class="sub header">
+                    <span class="segment_sub_heading">
+                     Country wise jobs           </span>
+                 </span>
+             </h2>
+             <div class="ui segment row">
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Indiranagar" href="jobs.html">
+                    America             <span class="grey-text hide-on-mobile">(375 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Whitefield" href="jobs.html">
+                    Armenia                <span class="grey-text hide-on-mobile">(561 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Marathahalli" href="jobs.html">
+                    Belarus               
+                    <span class="grey-text hide-on-mobile">(384 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 5th Block" href="jobs.html">
+                    Belize              <span class="grey-text hide-on-mobile">(184 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Jayanagar" href="jobs.html">
+                    Benin                <span class="grey-text hide-on-mobile">(306 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in HSR" href="jobs.html">
+                    Brazil              <span class="grey-text hide-on-mobile">(306 jobs)</span>
+                </a>
+                <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in JP Nagar" href="jobs.html">
+                 China              <span class="grey-text hide-on-mobile">(260 jobs)</span>
+             </a>
+             <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Lavelle Road" href="jobs.html">
+                 Canada              <span class="grey-text hide-on-mobile">(59 jobs)</span>
+             </a>
+             <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in MG Road" href="jobs.html">
+                 Dominica               <span class="grey-text hide-on-mobile">(74 jobs)</span>
+             </a>
+             <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in BTM" href="jobs.html">
+                 Ethiopia              <span class="grey-text hide-on-mobile">(431 jobs)</span>
+             </a>
+             <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 4th Block" href="jobs.html">
+                Grenada                <span class="grey-text hide-on-mobile">(85 jobs)</span>
+            </a>
+            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 7th Block" href="jobs.html">
+                Honduras                <span class="grey-text hide-on-mobile">(116 jobs)</span>
+            </a>
+            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Malleshwaram" href="jobs.html">
+                India                <span class="grey-text hide-on-mobile">(209 jobs)</span>
+            </a>
+            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Sarjapur Road" href="jobs.html">
+                Indonesia                <span class="grey-text hide-on-mobile">(183 jobs)</span>
+            </a>
+            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Bannerghatta Road" href="jobs.html">
+             Japan               <span class="grey-text hide-on-mobile">(253 jobs)</span>
+         </a>
+         <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Electronic City" href="jobs.html">
+            Jamaica <span class="grey-text hide-on-mobile">(391 jobs)</span>
+        </a>
+        <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 6th Block" href="jobs.html">
+            Kenya                <span class="grey-text hide-on-mobile">(98 jobs)</span>
+        </a>
+
+        <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Church Street" href="jobs.html">
+            Kosovo               <span class="grey-text hide-on-mobile">(50 jobs)</span>
+        </a>
+        <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Kalyan Nagar" href="jobs.html">
+         Lebanon               <span class="grey-text hide-on-mobile">(153 jobs)</span>
+     </a>
+     <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in New BEL Road" href="jobs.html">
+        Malaysia               <span class="grey-text hide-on-mobile">(194 jobs)</span>
+    </a>
+    <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Bellandur" href="jobs.html">
+        Mexico               <span class="grey-text hide-on-mobile">(179 jobs)</span>
+    </a>
+    <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Residency Road" href="jobs.html">
+      Philippines               <span class="grey-text hide-on-mobile">(71 jobs)</span>
+  </a>
+  <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Brigade Road" href="jobs.html">
+    South Africa               <span class="grey-text hide-on-mobile">(114 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Old Airport Road" href="jobs.html">
+    Sri Lanka               <span class="grey-text hide-on-mobile">(121 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Brookefield" href="jobs.html">
+    Sudan               <span class="grey-text hide-on-mobile">(115 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Frazer Town" href="jobs.html">
+    Suriname               <span class="grey-text hide-on-mobile">(162 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Banashankari" href="jobs.html">
+ Swaziland              <span class="grey-text hide-on-mobile">(219 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 1st Block" href="jobs.html">
+    Thailand               <span class="grey-text hide-on-mobile">(84 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Rajajinagar" href="jobs.html">
+    Tonga               <span class="grey-text hide-on-mobile">(146 jobs)</span>
+</a>
+<a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Basavanagudi" href="jobs.html">
+    Zimbabwe            <span class="grey-text hide-on-mobile">(149 jobs)</span>
+</a>
+</div>
+</div>
+
+
+<br/>
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-lg-3 offset-lg-1 hidden-lg-down">
+                <h5 class="title">UKS Job </h5>
+                <p>Material Design (codenamed Quantum Paper) is a design language developed by Google. </p>
+
+                <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.</p>
+            </div>
+            <!--/.First column-->
+
+            <hr class="hidden-md-up">
+
+           
+
+                    <hr class="hidden-md-up">
+
+                    
+
+                    <hr class="hidden-md-up">
+
+                   
+
+                </div>
+            </div>
+            <!--/.Footer Links-->
+
+            <hr>
+
+           
+
+                <!--Copyright-->
+                <div class="footer-copyright">
+                    <div class="container-fluid">
+                        © 2015 Copyright: <a href="#"> www.uksjobportal.com </a>
+
+                    </div>
+                </div>
+
+
+                <!--Footer-->
+
+                <!--/.Footer-->
+
+
+                <!-- SCRIPTS -->
+
+                <!-- JQuery -->
+                <script type="text/javascript" src="js/jquery-2.2.3.min.js">
+
+                </script>
+
+                <!-- Bootstrap tooltips -->
+                <script type="text/javascript" src="js/tether.min.js"></script>
+
+                <!-- Bootstrap core JavaScript -->
+                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+                <!-- MDB core JavaScript -->
+                <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+                <!-- popup start -->
+
+
+                <!-- BEGIN # BOOTSNIP INFO -->
+
+                <!-- END # BOOTSNIP INFO -->
+
+                <!-- BEGIN # MODAL LOGIN -->
+                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" align="center">
+                               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                ×</button>
+                                <img class="img-circle" id="img_logo" src="images/job.png">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                </button>
+                            </div>
+
+                            <!-- Begin # DIV Form -->
+                            <div id="div-forms">
+
+                                <!-- Begin # Login Form -->
+                                <form id="login-form">
+                                    <div class="modal-body">
+                                        <div id="div-login-msg">
+                                            <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                            <span id="text-login-msg">Type your username and password.</span>
+                                        </div>
+                                        <input id="login_username" class="form-control" type="text" placeholder="Email" required>
+                                        <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                                        <input id="login_username" class="form-control" type="text" placeholder="Mobile Number" required>
+                            <!-- <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" style="color: black;">Remember me </label>
+                                </div> -->
+                            </div>
+                            <div class="modal-footer">
+                                <div>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                                </div>
+                                <div>
+                                    <button id="login_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                                    <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End # Login Form -->
+
+                        <!-- Begin | Lost Password Form -->
+                        <form id="lost-form" style="display:none;">
+                            <div class="modal-body">
+                                <div id="div-lost-msg">
+                                    <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                    <span id="text-lost-msg">Type your e-mail.</span>
+                                </div>
+                                <input id="lost_email" class="form-control" type="text" placeholder="Email" required>
+                            </div>
+                            <div class="modal-footer">
+                                <div>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                                </div>
+                                <div>
+                                    <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                    <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End | Lost Password Form -->
+
+                        <!-- Begin | Register Form -->
+                        <form id="register-form" style="display:none;">
+                            <div class="modal-body">
+                                <div id="div-register-msg">
+                                    <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                    <span id="text-register-msg">Register an account.</span>
+                                </div>
+                                <input id="register_username" class="form-control" type="text" placeholder="User Name" required>
+                                <input id="register_email" class="form-control" type="text" placeholder="Email" required>
+                                <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                            </div>
+                            <div class="modal-footer">
+                                <div>
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                </div>
+                                <div>
+                                    <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                    <button id="register_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End | Register Form -->
+
+                    </div>
+                    <!-- End # DIV Form -->
+
+                </div>
+            </div>
+        </div>
+        <!-- END # MODAL LOGIN -->
+
+
+
+        <!-- Modal -->
+
+
+
+        <!-- popup end -->
+    </body>
+    </html>
+
+    <script type="text/javascript">
+    // $(window).load(function () {
+        // $('#myModal').modal('show');
+// $('#myModal').modal('hide');
+// });
+/* #####################################################################
+   #
+   #   Project       : Modal Login with jQuery Effects
+   #   Author        : Rodrigo Amarante (rodrigockamarante)
+   #   Version       : 1.0
+   #   Created       : 07/29/2015
+   #   Last Change   : 08/04/2015
+   #
+   ##################################################################### */
+   
+   $(function() {
+
+    var $formLogin = $('#login-form');
+    var $formLost = $('#lost-form');
+    var $formRegister = $('#register-form');
+    var $divForms = $('#div-forms');
+    var $modalAnimateTime = 300;
+    var $msgAnimateTime = 150;
+    var $msgShowTime = 2000;
+
+    $("form").submit(function () {
+        switch(this.id) {
+            case "login-form":
+            var $lg_username=$('#login_username').val();
+            var $lg_password=$('#login_password').val();
+            if ($lg_username == "ERROR") {
+                msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+            } else {
+                msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+            }
+            return false;
+            break;
+            case "lost-form":
+            var $ls_email=$('#lost_email').val();
+            if ($ls_email == "ERROR") {
+                msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+            } else {
+                msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+            }
+            return false;
+            break;
+            case "register-form":
+            var $rg_username=$('#register_username').val();
+            var $rg_email=$('#register_email').val();
+            var $rg_password=$('#register_password').val();
+            if ($rg_username == "ERROR") {
+                msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+            } else {
+                msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+            }
+            return false;
+            break;
+            default:
+            return false;
+        }
+        return false;
+    });
+    
+    $('#login_register_btn').click( function () { modalAnimate($formLogin, $formRegister) });
+    $('#register_login_btn').click( function () { modalAnimate($formRegister, $formLogin); });
+    $('#login_lost_btn').click( function () { modalAnimate($formLogin, $formLost); });
+    $('#lost_login_btn').click( function () { modalAnimate($formLost, $formLogin); });
+    $('#lost_register_btn').click( function () { modalAnimate($formLost, $formRegister); });
+    $('#register_lost_btn').click( function () { modalAnimate($formRegister, $formLost); });
+    
+    function modalAnimate ($oldForm, $newForm) {
+        var $oldH = $oldForm.height();
+        var $newH = $newForm.height();
+        $divForms.css("height",$oldH);
+        $oldForm.fadeToggle($modalAnimateTime, function(){
+            $divForms.animate({height: $newH}, $modalAnimateTime, function(){
+                $newForm.fadeToggle($modalAnimateTime);
+            });
+        });
+    }
+    
+    function msgFade ($msgId, $msgText) {
+        $msgId.fadeOut($msgAnimateTime, function() {
+            $(this).text($msgText).fadeIn($msgAnimateTime);
+        });
+    }
+    
+    function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+        var $msgOld = $divTag.text();
+        msgFade($textTag, $msgText);
+        $divTag.addClass($divClass);
+        $iconTag.removeClass("glyphicon-chevron-right");
+        $iconTag.addClass($iconClass + " " + $divClass);
+        setTimeout(function() {
+            msgFade($textTag, $msgOld);
+            $divTag.removeClass($divClass);
+            $iconTag.addClass("glyphicon-chevron-right");
+            $iconTag.removeClass($iconClass + " " + $divClass);
+        }, $msgShowTime);
+    }
+});
+
+
+   function myFunction() {
+    document.getElementById("dropdown-itm").style.zIndex = "1";
+}
+
+</script>
+
+

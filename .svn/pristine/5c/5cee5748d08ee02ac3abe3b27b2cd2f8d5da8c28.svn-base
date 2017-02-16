@@ -1,0 +1,100 @@
+
+        html,
+        body {
+            height: 100%;
+        }
+        .navbar {
+            background-color: transparent;
+        }
+        .top-nav-collapse {
+            background-color: #4285F4;
+        }
+        footer.page-footer {
+            background-color: #4285F4;
+        }
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #4285F4;
+            }
+        }
+        /* Carousel*/
+        .carousel {
+            height: 50%;
+        }
+        @media (max-width: 776px) {
+            .carousel {
+                height: 100%;
+            }
+        }
+        .carousel-item,
+        .active {
+            height: 100%;
+        }
+        .carousel-inner {
+            height: 100%;
+        }
+        .carousel-item:nth-child(1) {
+            background-image: url("images/s1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.4;
+        }
+        .carousel-item:nth-child(2) {
+            background-image: url("images/s2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carousel-item:nth-child(3) {
+            background-image: url("images/s3.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            /*            .carousel-item active{
+                            height: 200px;
+                        }*/
+                        /*Caption*/
+                        .flex-center {
+                            color: #fff;
+                        }
+                        /*auto complete*/
+                        #ui-id-1 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                            font-style: bold;
+                        }
+                        #ui-id-2 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                            font-style: bold;
+                        }
+                        #hr1 {
+                            border: 0;
+                            clear:both;
+                            display:block;
+                            background-color:#4285f4;
+                            height: 3px;
+                        }
+                        #hr2 {
+                            border: 0;
+                            clear:both;
+                            display:block;
+                            background-color:#cae8e6;
+                            height:  0.1em;
+                        }
+                        #ui-id-1 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                        }
+                        #ui-id-2 li{
+                            border: 1px solid #dff0d8;
+                            border-radius: 5px;
+                            color: #2196f3;
+                            font-style: italic;
+                        }
+              

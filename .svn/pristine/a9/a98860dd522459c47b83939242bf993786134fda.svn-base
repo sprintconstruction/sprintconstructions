@@ -1,0 +1,1110 @@
+
+<!DOCTYPE html>
+<html  lang="en"  prefix="og: http://ogp.me/ns#" >
+<head>
+    <meta charset="utf-8" />
+    <meta content="origin" name="referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- <link rel="preconnect" href="//b.zmtcdn.com" /> -->
+    
+    <!-- <link rel="alternate" hreflang="en" href="https://www.zomato.com/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="tr" href="https://www.zomato.com/tr/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="es" href="https://www.zomato.com/es/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="pt" href="https://www.zomato.com/pt/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="id" href="https://www.zomato.com/id/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="cs" href="https://www.zomato.com/cs/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="sk" href="https://www.zomato.com/sk/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="pl" href="https://www.zomato.com/pl/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="it" href="https://www.zomato.com/it/bangalore/indiranagar-restaurants" />
+    <link rel="alternate" hreflang="vi" href="https://www.zomato.com/vi/bangalore/indiranagar-restaurants" /> -->
+
+    <title>Job AG</title>
+    <meta name="description" content="Suggested restaurants near Indiranagar" />
+    <meta name="robots" content="NOODP,NOYDIR" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/job.png"/>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+
+   
+    
+    <script type="text/javascript"></script>        <script type="text/javascript">
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+
+
+
+    ga('create', {
+        trackingId: 'UA-19617341-5',
+        cookieDomain: 'auto',
+        name: 'city'
+    });
+    ga('city.send', 'pageview');
+
+    ga('create', {
+        trackingId: 'UA-19617341-30',
+        cookieDomain: 'auto',
+        name: 'country'
+    });
+    ga('country.send', 'pageview');
+
+    ga('create', {
+        trackingId: 'UA-19617341-21',
+        cookieDomain: 'auto',
+        name: 'global'
+    });
+    ga('global.set', 'dimension1', false);
+    ga('global.set', 'dimension2', "India");
+    ga('global.set', 'dimension3', "Bangalore");
+    ga('global.set', 'dimension4', "Others");
+    ga('global.send', 'pageview');
+
+
+
+</script>
+
+
+
+
+</head>
+<body class="is-responsive en"  >
+
+
+
+
+
+    <script>dataLayer = [];</script>
+
+    <!--Navbar-->
+<div class="row">
+<nav class="navbar navbar-dark bg-primary navbar-fixed-top">
+
+    <!-- Collapse button-->
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx2">
+        <i class="fa fa-bars"></i>
+    </button>
+
+   
+       
+        <div class="collapse navbar-toggleable-xs" id="collapseEx2">
+       
+            <a class="navbar-brand" href="index.html"><img src="images/job.png" alt="Image not found" width="50px" height="50px" /></a>
+   <span id="search-group" style="position: relative;bottom: 5em;">         
+ <div class="btn-group">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn-search">Job Type</button>
+
+                    <div class="dropdown-menu" id="dropdown-itm">
+                        <a class="dropdown-item" href="#">Ruby Rails</a>
+                        <a class="dropdown-item" href="#">Java</a>
+                        <a class="dropdown-item" href="#">PHP</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">.Net</a>
+                    </div>
+                    <div class="md-form">
+                        <span id="search-ico"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+                        <input type="text" id="form1" class="form-control" id="search-label" placeholder="Type Location" >
+                        <button class="btn btn-primary" type="submit" id="search-but-sub">Search</button>
+                    </div>
+
+                </div>
+                </span>
+        </div>
+        <!--/.Collapse content-->
+
+
+<!--/.Navbar-->
+
+
+    
+</nav>
+</div>
+
+
+ <div class="col-sm-6" >
+      <div class="list-group"  >
+  <a href="#Companies" class="list-group-item active">
+    Companies
+  </a>
+  <a href="#java" class="list-group-item">Jobs on Java</a>
+  <a href="#" class="list-group-item">Jobs on Ruby on rails</a>
+  <a href="#" class="list-group-item">Jobs on PHP</a>
+  <a href="#" class="list-group-item">Jobs on Javascript</a>
+</div>
+    </div>
+ 
+        <div class="row">
+
+            <b>Companies </b>
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/uks.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>localization projects for the Japanese market.;</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/tcs.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text"> Tata Consultancy Services
+Tata Consultancy Services' IT sector with leadership</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/wipro.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+India - Wipro
+Wipro Limited is an Indian Information Technology 
+</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+            
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/ibm.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>
+IBM
+IBM India - entry point to information on business solutions, 
+</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/infosys.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Consulting | IT Services </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/cogni.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Business Consulting </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+           
+           
+        </div>
+        <br>
+         <div class="row">
+
+            <b>Jobs on Java </b>
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/uks.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>localization projects for the Japanese market.;</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/tcs.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text"> Tata Consultancy Services
+Tata Consultancy Services' IT sector with leadership</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/wipro.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+India - Wipro
+Wipro Limited is an Indian Information Technology 
+</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+            
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/ibm.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>
+IBM
+IBM India - entry point to information on business solutions, 
+</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/infosys.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Consulting | IT Services </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/cogni.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Business Consulting </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+           
+           
+        </div>
+           <br>
+        <div class="row">
+
+            <b>Jobs on ruby on rails </b>
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/uks.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>localization projects for the Japanese market.;</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/tcs.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text"> Tata Consultancy Services
+Tata Consultancy Services' IT sector with leadership</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/wipro.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+India - Wipro
+Wipro Limited is an Indian Information Technology 
+</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+            
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/ibm.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>
+IBM
+IBM India - entry point to information on business solutions, 
+</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/infosys.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Consulting | IT Services </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/cogni.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Business Consulting </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+           
+           
+        </div>
+            <br>
+        <div class="row">
+
+            <b>Jobs on PHP </b>
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/uks.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>localization projects for the Japanese market.;</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/tcs.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text"> Tata Consultancy Services
+Tata Consultancy Services' IT sector with leadership</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/wipro.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+India - Wipro
+Wipro Limited is an Indian Information Technology 
+</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+            
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/ibm.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>
+IBM
+IBM India - entry point to information on business solutions, 
+</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/infosys.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Consulting | IT Services </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/cogni.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Business Consulting </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+           
+           
+        </div>
+             <br>
+        <div class="row">
+
+            <b>Jobs on Javascript </b>
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/uks.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>localization projects for the Japanese market.;</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/tcs.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text"> Tata Consultancy Services
+Tata Consultancy Services' IT sector with leadership</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/wipro.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+India - Wipro
+Wipro Limited is an Indian Information Technology 
+</p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+            
+            <div class="col-lg-12">
+            <!--First columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/ibm.png" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                      
+                        <!--Text-->
+                        <p>
+IBM
+IBM India - entry point to information on business solutions, 
+</p>
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--First columnn-->
+
+            <!--Second columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/infosys.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Consulting | IT Services </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Second columnn-->
+
+            <!--Third columnn-->
+            <div class="col-lg-2">
+                <!--Card-->
+                <div class="card">
+
+                    <!--Card image-->
+                    <div class="view overlay hm-white-slight">
+                        <img src="images/cogni.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <div class="mask"></div>
+                        </a>
+                    </div>
+                    <!--/.Card image-->
+
+                    <!--Card content-->
+                    <div class="card-block">
+                        <!--Title-->
+                        <!--Text-->
+                        <p class="card-text">
+Business Consulting </p>
+                       
+                    </div>
+                    <!--/.Card content-->
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <!--Third columnn-->
+            </div>
+           
+           
+        </div>
+
+<!-- shashi end -->
+
+    <style type="text/css">
+    .list-group
+    {
+  position: fixed;
+width: 250px;
+height: 200px;
+top: 30%;
+left: 20%;
+margin-top: -100px; /* Negative half of height. */
+margin-left: -250px
+    }
+    .col-sm-6
+    {
+    right: 30%;
+    top: 40%;
+    }
+  </style>
+
+
+
+
+      
+ 
+   
+
+
+   
+
+
+
+</body>
+</html>

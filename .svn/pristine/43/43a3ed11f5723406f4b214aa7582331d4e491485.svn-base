@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+        <title>Search Jobs</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <!-- Template styles -->
+        <style>
+            /* TEMPLATE STYLES */
+            p#text-description {
+                font-family: sans-serif;
+                font-size: 14px;
+                position: relative;
+                top: 8px;
+            }
+            span#sall-font {
+                position: relative;
+                font-size: 13px;
+            }
+            main {
+                padding-top: 3rem;
+                padding-bottom: 2rem;
+            }
+            .widget-wrapper {
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+            }
+            .reviews {
+                text-align: center;
+                border-top: 1px solid #e0e0e0;
+                border-bottom: 1px solid #e0e0e0;
+                padding: 1rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+            .price {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: -2px;
+            }
+            .price .tag {
+                margin: 0;
+            }
+            .list-group
+            {
+                margin-top: -20px;  
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+                <!-- Collapse button-->
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+                    <img src="images/uso.png" width=20 height=20 alt="USO" style="position: relative; right: 2em;">
+                    <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;">UNITED STATES OF OPPORTUNITIES</a>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="container">
+                    <!--Collapse content-->
+                    <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                        <!--Navbar Brand-->
+                        <!--Links-->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <img src="images/uso.png" height=40 alt="USO" class="hidden-xs">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link blue-text hidden-xs" href="index.html"  style="font-size: large">UNITED STATES OF OPPORTUNITIES</a>
+                            </li>
+                        </ul>
+                        <div style="text-align: left">
+                            <a class="nav-link blue-text" href="#" style="position: relative; left:1em;top: 0.5em">About</a>
+                        </div>
+                    </div>
+                    <!--/.Collapse content-->
+                </div>
+            </nav>
+            <!--/.Navbar-->
+        </header>
+        <br>
+        <main> <br>
+            <div class="container">
+                <div class="row">
+                    <form class="form-inline">
+                        <div class="col-lg-4 col-xs-10"><div class="md-form form-group">
+                                <link rel="stylesheet" href="css/jquery-ui.css">
+                                <script>
+                                    $(function () {
+                                        var availableTags = [
+                                            "PHP Developer",
+                                            "Java Developer",
+                                            "Asp Developer",
+                                            "Admin",
+                                            "C Developer",
+                                            "C++ Developer",
+                                            "Clojure Developer",
+                                            "COBOL Developer",
+                                            "ColdFusion Developer",
+                                            "Erlang Developer",
+                                            "Fortran Developer",
+                                            "Groovy Developer",
+                                            "Haskell Developer",
+                                            "JavaScript Developer",
+                                            "Lisp Developer",
+                                            "Perl Developer",
+                                            "Python Developer",
+                                            "Ruby Developer",
+                                            "Scala Developer",
+                                            "Scheme Developer"
+                                        ];
+                                        $("#tags").autocomplete({
+                                            source: availableTags
+                                        });
+                                    });
+                                </script>
+                                <input type="text" id="tags" class="form-control validate" placeholder="Type Keyword" style="border: 1px solid #a3d7e3;width: 130%;border-radius: 10px">
+                            </div></div>
+                        <div class="col-lg-4  col-xs-10"><div class="md-form form-group">
+                                <link rel="stylesheet" href="css/jquery-ui.css">
+                                <script>
+                                    $(function () {
+                                        var availableTags = [
+                                            "Algeria ",
+                                            "Angola",
+                                            "Benin ",
+                                            "Botswana ",
+                                            "Burkina Faso",
+                                            "Burundi",
+                                            "Cameroon",
+                                            "The Republic of Cabo Verde",
+                                            "Chad ",
+                                            "Comoros ",
+                                            "Democratic Republic of Congo",
+                                            "Djibouti",
+                                            "Egypt ",
+                                            "Eritrea",
+                                            "Ethiopia",
+                                            "Gabon ",
+                                            "Gambia ",
+                                            "Ghana ",
+                                            "Guinea ",
+                                            "Guinea-Bissau ",
+                                            "Kenya ",
+                                            "Lesotho ",
+                                            "Liberia ",
+                                            "Libya ",
+                                            "Madagascar ",
+                                            "Malawi ",
+                                            "Mali ",
+                                            "Mauritania ",
+                                            "Mauritius ",
+                                            "Morocco ",
+                                            "Mozambique ",
+                                            "Namibia ",
+                                            "Niger ",
+                                            "Africa ",
+                                            "Rwanda ",
+                                            "Republic Arab Saharawi Democratic ",
+                                            "Sao Tome and Principe",
+                                            "Senegal",
+                                            "Seychelles ",
+                                            "Sierra Leone",
+                                            "Somalia ",
+                                            "South Africa ",
+                                            "South Sudan ",
+                                            "Sudan",
+                                            "Swaziland",
+                                            "Tanzania ",
+                                            "Togo ",
+                                            "Tunisia ",
+                                            "Uganda ",
+                                            "Zambia  ",
+                                            "Zimbabwe  "
+                                        ];
+                                        $("#location").autocomplete({
+                                            source: availableTags
+                                        });
+                                    });
+                                </script>
+                                <input type="text" id="location" class="form-control validate" placeholder="Type Location" style="border: 1px solid #a3d7e3;width: 130%;border-radius: 10px">
+                            </div></div>
+                        <div class="col-lg-4  col-sm-10"><div class="form-group"><p></p>
+                                <a href="job.html" class="btn btn-primary btn-lg  btn-block">Search</a>
+                            </div></div></form>               
+                </div>
+            </div><br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3" id="content">
+                        <div class="widget-wrapper">
+                            <h2><b style="color : green;">  Business</b></h2><br>
+                            <div class="list-group" id="sidebar">
+                                <div>
+                                    <div>
+                                        <!-- menu -->
+                                        <div id="MainMenu">
+                                            <div class="list-group panel">
+                                                <a href="#demo1" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Types of Business
+                                                    <i class="fa fa-caret-down"></i></a>
+                                                <div class="collapse" id="demo1">
+                                                    <select class="form-control">
+                                                        <option>Service Business </option>
+                                                        <option>Merchandising Business</option>
+                                                        <option>Manufacturing Business</option>
+                                                        <option>Corporation</option>
+                                                    </select>
+                                                </div>                               
+                                                <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Location <i class="fa fa-caret-down"></i></a>
+                                                <div class="collapse" id="demo3">
+                                                    <select class="form-control"><option>Any</option>
+                                                        <option>Abuja</option>
+                                                        <option>Sokoto </option>
+                                                        <option>Niger </option>
+                                                        <option>Borno</option></select>
+                                                </div>
+                                                <a href="#demo5" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Date posted  <i class="fa fa-caret-down"></i></a>
+                                                <div class="collapse" id="demo5">
+                                                    <select class="form-control"><option>Any</option>
+                                                        <option>Today</option>
+                                                        <option>Yesterday </option>
+                                                        <option>Last week</option></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header light-green white-text">
+                                Featured
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Premium jobs</h4>
+                                <img class="img-responsive" src="images/bussines2.jpg"><br>
+                                <p class="card-text">We supporting you Always.</p>
+                                <a class="btn btn-light-green white-text">Click</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title blue-text" id="myModalLabel">Gig Eonomy</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <i class="fa fa-building" aria-hidden="true"> &nbsp; GiG Pvt Ltd. </i><br/>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> &nbsp; America  </i><br>
+                                    <span class="glyphicons glyphicons-map-marker"></span>
+                                    <p class="card-text" id="text-description">The spread of the Internet and wider use of technology has enabled us to work with a vast number of people in a collaborative way, or what is known as crowdwork. Similarly, we are increasingly able to secure services when needed by using ‘apps’ managed by firms. These new tools of the “gig economy” have made many business processes more efficient and reduced costs.</p>
+                                    <p id="text-description">
+                                        The resulting report, Independent work: Choice, necessity, and the gig economy, finds that up to 162 million people in Europe and the United States—or 20 to 30 percent of the working-age population—engage in some form of independent work.In a shifting economic climate, business owners will be challenged to balance necessary innovations while identifying and preserving tried and true business practices. Recognizing which is which may be one of the biggest factors that separates a successful business from the pack.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Apply</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- title popup end -->
+                    <!-- apply popup start -->
+                    <div class="modal fade" id="register8" role="dialog">
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h4 class="modal-title blue-text" id="myModalLabel">Gig Eonomy</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <i class="fa fa-building" aria-hidden="true"> &nbsp; GiG Pvt Ltd. </i><br/>
+                                    <i class="fa fa-map-marker" aria-hidden="true"> &nbsp; America  </i><br>
+                                    <span class="glyphicons glyphicons-map-marker"></span>
+                                    <p class="card-text" id="text-description">The spread of the Internet and wider use of technology has enabled us to work with a vast number of people in a collaborative way, or what is known as crowdwork. Similarly, we are increasingly able to secure services when needed by using ‘apps’ managed by firms. These new tools of the “gig economy” have made many business processes more efficient and reduced costs.</p>
+                                    <p id="text-description">
+                                        The resulting report, Independent work: Choice, necessity, and the gig economy, finds that up to 162 million people in Europe and the United States—or 20 to 30 percent of the working-age population—engage in some form of independent work.In a shifting economic climate, business owners will be challenged to balance necessary innovations while identifying and preserving tried and true business practices. Recognizing which is which may be one of the biggest factors that separates a successful business from the pack.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <textarea class="form-control" rows="2" placeholder="Disclosure"></textarea>
+                                    <button type="button" class="btn btn-primary">Apply</button>
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- apply popup end -->
+                    <!-- cards div start -->
+                    <div class="col-lg-6" id="content">
+                        <span>About 20 Bussiness Strategies found</span>
+                        <div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : Today<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Gig Eonomy</b> </h4>
+                                <i class="fa fa-desktop" aria-hidden="true"></i>&nbsp;&nbsp; GiG Pvt Ltd.<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;America</i>
+                                <p class="card-text">The spread of the Internet and wider use of technology has enabled us to work with a vast number of people in a collaborative way, or what is known as crowdwork. Similarly, we are increasingly able to secure services when needed by using ‘apps’ managed by firms. These new tools of the “gig economy” have made many business processes more efficient and reduced costs.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : Yesterday<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Finance Your Business</b></h4>
+                                <i class="fa fa-archive" aria-hidden="true"></i>&nbsp;&nbsp;Indian Finance Pvt Ltd.<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;Landon</i>
+                                <p class="card-text">You have a variety of options when it comes to financing your small business. Explore your opportunities that range from traditional loans to grants and bonds.You're going to pay for this great idea of yours. These topics will provide you with everything you'll need to know about funding.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : 12/28/2016<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Supply Chains</b></h4>
+                                <i class="fa fa-suitcase" aria-hidden="true"></i>&nbsp;&nbsp;Chain Markeing Pvt Ltd.<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;Japan
+                                </i>
+                                <p class="card-text">Complex value chains are a fundamental feature of the global economy, linking developing and developed economies, raw materials and finished products, workers and consumers. Liberalisation and technological innovations have enabled production processes to be broken down into smaller and smaller components, outsourced to utilise the cheapest labour costs or most advantageous regulations.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : 12/28/2016<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Free Speech</b></h4>
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;Information Pvt Ltd.<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;India
+                                </i>
+                                <p class="card-text">Media companies – whether within broadcast, print journalism, entertainment, or Internet-based – are at the frontier of the free speech debate. On one hand, they are custodians of journalists’ and others’ right to speak freely and receive information. On the other, they have the power to curb speech of those who do not agree to their terms of engagement, or whose views the owners or editors disagree.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div>
+                        <div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : 12/28/2016<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Automation</b></h4>
+                                <i class="fa fa-laptop" aria-hidden="true"></i>&nbsp;&nbsp;AMM Pvt Ltd<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;Rashya
+                                </i>
+                                <p class="card-text">The constant and relentless pressure on profit margins is forcing many companies to look at new ways to cut costs. From airline check-in terminals, to sophisticated manufacturing machinery, and robotics in mining, companies are increasingly automating their processes to replace workers. Machines do not take lunch breaks, sick leave or go on vacation, they do not form unions, and they work long hours.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div><div class="card" id="text-block">
+                            <div class="card-block">
+                                <div style="float: right; width: 150px;">Posted : 12/28/2016<i class="fa fa-suitcase" style="font-size: 40px; float: right;"></i></div>
+                                <h4 class="card-title text-primary" data-target="#myModal8" data-toggle="modal" style="cursor: pointer;"><b>Construction Workers</b></h4>
+                                <i class="fa fa-building" aria-hidden="true"></i>&nbsp;&nbsp;Indian Estate<br>
+                                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;&nbsp;Africa
+                                </i>
+                                <p class="card-text">The construction sector is a major employer accounting for approximately 7% of the global workforce. It includes many skilled and unskilled workers who design infrastructure and physically build it, making the industry labour-intensive. Migrant workers are a typical feature of this industry globally as construction cannot be outsourced and delivery of projects in cycles benefits from the ‘short-term’ contributions of migrants.</p>
+                                <a class="btn btn-primary" data-target="#register8" data-toggle="modal">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-header light-green white-text">
+                                Featured
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">Finding Business?</h4>
+                                <img class="img-responsive" src="images/business1.jpg"><br>
+                                <p class="card-text">Start your own Business.</p>
+                                <a class="btn btn-light-green white-text">Click</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-header light-green white-text">
+                                Featured
+                            </div>
+                            <div class="card-block">
+                                <h4 class="card-title">More Business</h4>
+                                <img class="img-responsive" src="images/video-poster.jpg"><br>
+                                <p class="card-text">We will Guide you.</p>
+                                <a class="btn btn-light-green white-text">Click</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <nav>
+                    <ul class="pagination pg-blue">
+                        <!--Arrow left-->
+                        <li class="page-item">
+                            <a class="page-link" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <!--Numbers-->
+                        <li class="page-item active"><a class="page-link">1</a></li>
+                        <li class="page-item"><a class="page-link">2</a></li>
+                        <li class="page-item"><a class="page-link">3</a></li>
+                        <li class="page-item"><a class="page-link">4</a></li>
+                        <li class="page-item"><a class="page-link">5</a></li>
+                        <!--Arrow right-->
+                        <li class="page-item">
+                            <a class="page-link" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>   
+            </div>
+        </main>
+        <!--/.Panel-->
+        <!--Footer-->
+        <footer class="page-footer center-on-small-only primary-color-dark"  id="footer">
+            <!--Footer Links-->
+            <div class="container-fluid">
+                <div class="row">
+                    <!--First column-->
+                    <div class="col-md-4 offset-lg-1 hidden-lg-down">
+                        <img src="images/uso.png">
+                        United State of Oportunities<br>
+                        We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa,job vacancies in Africa and 2016 Africa jobs and recruitment opportunities
+                    </div>
+                </div>
+            </div>
+            <!--/.Footer Links-->
+            <hr>
+            <!--/.Call to action-->
+            <!--Copyright-->
+            <div class="footer-copyright" >
+                <div class="container-fluid">
+                    © 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+                </div>
+            </div>
+            <!--/.Copyright-->
+        </footer>
+        <!--/.Footer-->
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script>
+                            $(window).scroll(function () {
+                                var threshold = 50;
+                                $("#test").html($(window).scrollTop());
+                                if ($(window).scrollTop() >= threshold)
+                                    $('#sidebar').addClass('fixed');
+                                else
+                                    $('#sidebar').removeClass('fixed');
+                                var check = $("#content").height() - $("#sidebar").height() - 21;
+                                if ($(window).scrollTop() >= check)
+                                    $('#sidebar').addClass('bottom');
+                                else
+                                    $('#sidebar').removeClass('bottom');
+                            });
+        </script>
+        <style type="text/css">
+            div#text-block {
+                position: relative; 
+                box-shadow: 2px 2px 5px #888888;
+            } 
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    </body>
+</html>

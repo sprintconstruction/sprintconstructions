@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+  <title>Resume Search</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="dist/css/bootstrap-select.css">-->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/registration.css" rel="stylesheet">
+
+  <!-- Template styles -->
+  <style>
+    /* TEMPLATE STYLES */
+
+    p#text-description {
+      font-family: sans-serif;
+      font-size: 14px;
+      position: relative;
+      top: 8px;
+    }
+    span#sall-font {
+      position: relative;
+      font-size: 13px;
+    }
+
+    main {
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .widget-wrapper {
+      padding-bottom: 2rem;
+      //  border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 2rem;
+    }
+
+    .reviews {
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .price {
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: -2px;
+    }
+
+    .price .tag {
+      margin: 0;
+    }
+
+    .list-group
+    {
+      margin-top: -20px;  
+      }/* 
+      .col-sm-6
+      {
+        right: 30%;
+        top: 40%;
+    }
+    .col-lg-7
+    {
+ right: 8%;
+}*/
+
+</style>
+
+
+</head>
+
+<body>
+  <div class="container">
+   <div class="row">
+
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+
+      <!-- Collapse button-->
+      <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+        <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;">UNITED STATES OF OPPORTUNITIES</a>
+        <img src="images/uso.png" width=30 height=30 alt="USO" style="position: relative; right: 1em;">
+        <i class="fa fa-bars"></i>
+      </button>
+
+
+      <!--Collapse content-->
+      <div class="collapse navbar-toggleable-xs" id="collapseEx">
+        <div  class="col-lg-6">
+          <ul class="nav navbar-nav col-lg-9">
+           <!--    <li class="nav-item">
+                <a class="nav-link blue-text hidden-xs" href="index.html"  style="font-size: large">UNITED STATES OF OPPORTUNITIES</a>                   
+              </li> -->
+              <li class="nav-item">
+                <div >
+                  <a href="index.html"><img src="images/uso_logo.png" height="40" alt="USO" class="hidden-xs"></a>
+                </div>
+              </li>
+            </ul>
+                    <!--  <div class="col-lg-1" style="text-align: right;"> about
+                  </div> -->
+                </div>
+                
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!--/.Collapse content-->
+
+      </div>
+
+    </nav></div></div>
+    <br>
+    <main>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12" style="background-color: white; ">
+            <br/>
+            <div class="row">
+
+              <!-- Form Name -->
+              <!-- <legend>Registration</legend> -->
+              <div class="col-sm-12 ">
+                <center>
+                  <h4 class="well" style="height: 55px; color: #005ce6;"><b>Resume Search</b></h4></center><br />
+                  <!-- Text input-->
+                  <form action="#">
+                    <div class="col-sm-2 ">
+                    </div>
+                    <div class="col-sm-3 ">
+                      <div class="md-form">
+
+                        <input type="text" id="form10" name="skills" class="form-control validate">
+                        <label for="form10" data-error="wrong" data-success="right">Skills</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-1 form-group">
+                    </div>
+                    <div class="col-sm-3 form-group">
+                      <div class="md-form">
+                        <input type="text" id="form11" name="location" class="form-control validate">
+                        <label for="form11" data-error="wrong" data-success="right">Location</label>
+                      </div>
+                    </div>
+                    <div class="col-sm-1 form-group">
+                    </div>
+                    <div class="col-sm-2 form-group">
+                      <div class="md-form">
+
+                       <button  class="btn btn-success" onclick="function val()" style="height: 40px;">Find Resume</button>
+
+                     </div>
+                   </div>
+                 </form>
+               </div>
+             </div>
+
+
+           </form>
+           <script >
+            function val()
+
+            {
+             alert(document.getElementsById("form10").value);
+             if (document.getElementsById("form10").value == 0 && document.getElementsById("form11").value == 0) 
+             {
+              alert("no data found");
+            }
+          }
+        </script>
+        <br />
+      </div><br />
+      <div class="col-lg-12" style="background-color: white;" >
+        <center><h4 class="well" style ="color: #005ce6;"><strong>Search Deatails</strong></h4></center>
+    <!-- <div class="panel-actions">
+      <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+      <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+      <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+    </div> -->
+    <div class="row">
+      <div class="col-lg-6">
+       <div class="panel-body">
+        <div class="card text-xs-center">
+          <div class="card-block" >
+            <label style="float: right;">Posted: 14/04/2016</label>
+            <h4 class="card-title"><a href="resume_view.html" ><b>George</b></a></h4>
+            <p > Skills : Java,SQL,HTML,JQuery</p>
+            <p class="card-text">Experience : 3 years.</p>
+            <p > Location : England</p>
+            <a class="btn btn-default" href="resume_view.html">View</a>
+          </div>
+          <div class="card-footer text-muted default-color-dark white-text">
+            <p>18 days ago</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-lg-6">
+     <div class="panel-body">
+      <div class="card text-xs-center">
+        <div class="card-block" >
+          <label style="float: right;">Posted: 14/04/2016</label>
+          <h4 class="card-title"><a href="#" ><b>Sebastian</b></a></h4>
+          <p > Skills : Java,SQL,HTML,JQuery</p>
+          <p class="card-text">Experience : 3 years.</p>
+          <p > Location :Sebastian</p>
+          <a class="btn btn-default">View</a>
+        </div>
+        <div class="card-footer text-muted default-color-dark white-text">
+          <p>18 days ago</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+   <div class="panel-body">
+    <div class="card text-xs-center">
+      <div class="card-block" >
+        <label style="float: right;">Posted: 14/04/2016</label>
+        <h4 class="card-title"><a href="#" ><b>Peter</b></a></h4>
+        <p > Skills : Java,SQL,HTML,JQuery</p>
+        <p class="card-text">Experience : 3 years.</p>
+        <p > Location : Belgium</p>
+        <a class="btn btn-default">View</a>
+      </div>
+      <div class="card-footer text-muted default-color-dark white-text">
+        <p>18 days ago</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="col-lg-6">
+ <div class="panel-body">
+  <div class="card text-xs-center">
+    <div class="card-block" >
+      <label style="float: right;">Posted: 14/04/2016</label>
+      <h4 class="card-title"><a href="#" ><b>Angel</b></a></h4>
+      <p > Skills : Java,SQL,HTML,JQuery</p>
+      <p class="card-text">Experience : 3 years.</p>
+      <p > Location :  Belgium</p>
+      <a class="btn btn-default">View</a>
+    </div>
+    <div class="card-footer text-muted default-color-dark white-text">
+      <p>18 days ago</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+   <div class="panel-body">
+    <div class="card text-xs-center">
+      <div class="card-block" >
+        <label style="float: right;">Posted: 14/04/2016</label>
+        <h4 class="card-title"><a href="#" ><b>Martin</b></a></h4>
+        <p > Skills : Java,SQL,HTML,JQuery</p>
+        <p class="card-text">Experience : 3 years.</p>
+        <p > Location : Martin</p>
+        <a class="btn btn-default">View</a>
+      </div>
+      <div class="card-footer text-muted default-color-dark white-text">
+        <p>18 days ago</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="col-lg-6">
+ <div class="panel-body">
+  <div class="card text-xs-center">
+    <div class="card-block" >
+      <label style="float: right;">Posted: 14/04/2016</label>
+      <h4 class="card-title"><a href="#" ><b>Basavaraj Antarathan</b></a></h4>
+      <p > Skills : Java,SQL,HTML,JQuery</p>
+      <p class="card-text">Experience : 3 years.</p>
+      <p > Location : Mysore</p>
+      <a class="btn btn-default">View</a>
+    </div>
+    <div class="card-footer text-muted default-color-dark white-text">
+      <p>18 days ago</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+</div>
+<div class="col-md-2">
+
+</div>
+
+</div>
+</div>
+</main>
+
+<!--/.Panel-->
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only primary-color-dark"  id="footer">
+
+  <!--Footer Links-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <!--First column-->
+      <div class="col-md-4 offset-lg-1 hidden-lg-down">
+
+        <img src="images/uso.png">
+        United State of Oportunities<br>
+
+        We are Africa's No.1 Recruitment website, keeping you informed about the latest jobs in Africa,job vacancies in Africa and 2016 Africa jobs and recruitment opportunities
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <!--/.Footer Links-->
+
+  <hr>
+
+
+  <!--/.Call to action-->
+
+  <!--Copyright-->
+  <div class="footer-copyright" >
+    <div class="container-fluid">
+      © 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+
+    </div>
+  </div>
+  <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+
+<!-- SCRIPTS -->
+
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+
+<script>
+
+  $(window).scroll(function () {
+    var threshold = 50;
+    $("#test").html($(window).scrollTop());
+    if ($(window).scrollTop() >= threshold)
+      $('#sidebar').addClass('fixed');
+    else
+      $('#sidebar').removeClass('fixed');
+    var check = $("#content").height() - $("#sidebar").height()-21;
+    if ($(window).scrollTop() >= check)
+      $('#sidebar').addClass('bottom');
+    else
+      $('#sidebar').removeClass('bottom');
+  });
+
+</script>
+<script>
+  $(document).ready(function() {
+    // The maximum number of options
+    var MAX_OPTIONS = 5;
+
+    $('#surveyForm')
+    
+        // Add button click handler
+        .on('click', '.addButton', function() {
+          var $template = $('#optionTemplate'),
+          $clone    = $template
+          .clone()
+          .removeClass('hide')
+          .removeAttr('id')
+          .insertBefore($template),
+          $option   = $clone.find('[name="option[]"]');
+
+            // Add new field
+            $('#surveyForm').formValidation('addField', $option);
+          })
+
+        // Remove button click handler
+        .on('click', '.removeButton', function() {
+          var $row    = $(this).parents('.form-group'),
+          $option = $row.find('[name="option[]"]');
+
+            // Remove element containing the option
+            $row.remove();
+
+            // Remove field
+            $('#surveyForm').formValidation('removeField', $option);
+          })
+
+        // Called after adding new field
+        .on('added.field.fv', function(e, data) {
+            // data.field   --> The field name
+            // data.element --> The new field element
+            // data.options --> The new field options
+
+            if (data.field === 'option[]') {
+              if ($('#surveyForm').find(':visible[name="option[]"]').length >= MAX_OPTIONS) {
+                $('#surveyForm').find('.addButton').attr('disabled', 'disabled');
+              }
+            }
+          })
+
+        // Called after removing the field
+        .on('removed.field.fv', function(e, data) {
+         if (data.field === 'option[]') {
+          if ($('#surveyForm').find(':visible[name="option[]"]').length < MAX_OPTIONS) {
+            $('#surveyForm').find('.addButton').removeAttr('disabled');
+          }
+        }
+      });
+      });
+    </script>
+
+    <style type="text/css">
+     div#text-block {
+      position: relative; 
+      /*border: 1px solid; */
+      box-shadow: 2px 2px 5px #888888;
+    } 
+/*.fa .fa-suitcase {
+    font-size: 50px;
+  }*/
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>-->
+</body>
+
+</html>

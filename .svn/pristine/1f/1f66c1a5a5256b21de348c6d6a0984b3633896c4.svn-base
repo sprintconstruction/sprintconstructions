@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>USO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="dist/css/bootstrap-select.css">-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/uso.png"/>
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="job.html">-->
+    <!-- <link href="css/city_style.css" rel="stylesheet"> -->
+    <!-- Template styles -->
+    <style>
+
+        /*chat*/
+
+
+        span#msssage-text {
+          position: relative;
+          bottom: 5px;
+          right: 6px;
+          z-index: +1;
+          font-weight: bold;
+      }
+      .navbar .navbar-nav .nav-item {
+        margin-left: 38px !important;
+    }
+    /*new chat*/
+
+
+
+
+    .portlet {
+        margin-bottom: 15px;
+    }
+
+    .btn-white {
+        border-color: #cccccc;
+        color: #333333;
+        background-color: #ffffff;
+    }
+
+    .portlet {
+        border: 1px solid;
+    }
+
+    .portlet .portlet-heading {
+        padding: 0 15px;
+    }
+
+    .portlet .portlet-heading h4 {
+        padding: 1px 0;
+        font-size: 16px;
+    }
+
+    .portlet .portlet-heading a {
+        color: #fff;
+    }
+
+    .portlet .portlet-heading a:hover,
+    .portlet .portlet-heading a:active,
+    .portlet .portlet-heading a:focus {
+        outline: none;
+    }
+
+    .portlet .portlet-widgets .dropdown-menu a {
+        color: #333;
+    }
+
+    .portlet .portlet-widgets ul.dropdown-menu {
+        min-width: 0;
+    }
+
+    .portlet .portlet-heading .portlet-title {
+        float: left;
+    }
+
+    .portlet .portlet-heading .portlet-title h4 {
+        margin: 10px 0;
+    }
+
+    .portlet .portlet-heading .portlet-widgets {
+        float: right;
+        margin: 8px 0;
+    }
+
+    .portlet .portlet-heading .portlet-widgets .tabbed-portlets {
+        display: inline;
+    }
+
+    .portlet .portlet-heading .portlet-widgets .divider {
+        margin: 0 5px;
+    }
+
+    .portlet .portlet-body {
+        padding: 15px;
+        background: #fff;
+    }
+
+    .portlet .portlet-footer {
+        padding: 10px 15px;
+        background: #e0e7e8;
+    }
+
+    .portlet .portlet-footer ul {
+        margin: 0;
+    }
+
+    .portlet-green,
+    .portlet-green>.portlet-heading {
+        border-color: #16a085;
+    }
+
+    .portlet-green>.portlet-heading {
+        color: #fff;
+        background-color: #16a085;
+    }
+
+    .portlet-orange,
+    .portlet-orange>.portlet-heading {
+        border-color: #f39c12;
+    }
+
+    .portlet-orange>.portlet-heading {
+        color: #fff;
+        background-color: #f39c12;
+    }
+
+    .portlet-blue,
+    .portlet-blue>.portlet-heading {
+        border-color: #2980b9;
+    }
+
+    .portlet-blue>.portlet-heading {
+        color: #fff;
+        background-color: #2980b9;
+    }
+
+    .portlet-red,
+    .portlet-red>.portlet-heading {
+        border-color: #e74c3c;
+    }
+
+    .portlet-red>.portlet-heading {
+        color: #fff;
+        background-color: #e74c3c;
+    }
+
+    .portlet-purple,
+    .portlet-purple>.portlet-heading {
+        border-color: #8e44ad;
+    }
+
+    .portlet-purple>.portlet-heading {
+        color: #fff;
+        background-color: #8e44ad;
+    }
+
+    .portlet-default,
+    .portlet-dark-blue,
+    .portlet-default>.portlet-heading,
+    .portlet-dark-blue>.portlet-heading {
+        border-color: #34495e;
+    }
+
+    .portlet-default>.portlet-heading,
+    .portlet-dark-blue>.portlet-heading {
+        color: #fff;
+        background-color: #34495e;
+    }
+
+    .portlet-basic,
+    .portlet-basic>.portlet-heading {
+        border-color: #333;
+    }
+
+    .portlet-basic>.portlet-heading {
+        border-bottom: 1px solid #333;
+        color: #333;
+        background-color: #fff;
+    }
+
+    @media(min-width:768px) {
+        .portlet {
+            margin-bottom: 30px;
+        }
+    }
+
+    .text-green {
+        color: #16a085;
+    }
+
+    .text-orange {
+        color: #f39c12;
+    }
+
+    .text-red {
+        color: #e74c3c;
+    }                
+    #chat_modal {
+        position: fixed;
+        bottom: 0;
+        right:  18%;
+        z-index: 1;
+        // width: 100%;
+    } 
+
+
+    overflow-y:hidden;
+}
+html,
+body {
+    height: 100%;
+
+} 
+/* Navigation*/
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+footer.page-footer {
+    background-color: #4285F4;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+/* Carousel*/
+.carousel {
+    height: 50%;
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* Styles */
+    .modal-dialog {
+        width:  100% !important;
+        margin-left: 0% !important;
+    }
+}
+.carousel-item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item:nth-child(1) {
+    background-image: url("images/job_ng.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}
+.carousel-item:nth-child(2) {
+    background-image: url("images/scholarship_ng.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel-item:nth-child(3) {
+    background-image: url("images/business_slide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex-center {
+    color: #fff;
+}
+</style>
+</head>
+<body style="overflow-y: hidden">
+
+    <!--Navbar-->
+    <div class="container">
+       <div class="row">
+
+           <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar" style="background-color: white;">
+
+              <!-- Collapse button-->
+              <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx" style="color: black !important">
+                <img src="images/uso.png" width=20 height=20 alt="USO" style="position: relative; right: 2em;">
+                <a class="nav-link blue-text" href="index.html" style="font-size: 12px;position: relative; right: 2em;">UNITED STATES OF OPPORTUNITIES</a>
+                <i class="fa fa-bars"></i>
+            </button>
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                  <!--Navbar Brand-->
+                  <!--<a class="navbar-brand" href="http://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>-->
+                  <!--Links-->
+                  <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                     <div >
+                     <a href="index.html"><img src="images/uso_logo.png" height="40" alt="USO" class="hidden-xs"></a>
+                  </div>
+              </li>
+      
+          <li class="nav-item">
+              <a href="history_new.html" class="nav-link blue-text" role="button">History</a> 
+              
+          </li><li class="nav-item">
+          <a href="resume_search.html" class="nav-link blue-text" role="button">Resume Search</a> 
+
+      </li>
+      <li class="nav-item">
+          <a href="post_jobs.html" class="nav-link blue-text" role="button">Post Jobs</a> 
+
+      </li>
+
+
+
+      <li class="nav-item "> 
+          <span style="left: 50%;">
+             <a class="btn btn-email btn-lg btn-primary">
+              <i class="fa fa-envelope"></i>
+          </a>
+          <span class="counter red-text" id="msssage-text">22</span>
+
+
+        </span>
+
+
+
+    </li>
+ 
+</ul>
+
+<div class="btn-group" style="float: right;">
+   <img class="img-circle" src="images/user.jpg" height="40" width="40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+   <div class="dropdown-menu">
+      <a class="dropdown-item">John Miller</a>
+      <!-- <a class="dropdown-item">Premium User</a> -->
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="index.html">Logout</a>
+  </div>
+</div>
+<div id="google_translate_element" style="float: right;"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+
+<!--/.Collapse content-->
+
+</div>
+
+</nav>
+</div><br /><br>
+<!--/.Navbar-->
+<!--new slider-->
+
+<div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active" >
+        </div>
+        <!--Second slide -->
+        <div class="carousel-item">
+            <!--Caption-->
+                    <!--                <div class="flex-center animated fadeInDown">
+                                        <ul>
+                                            <li>
+                                                <h1 class="h1-responsive">Lots of tutorials training</h1>
+                                            </li>
+                                            <li>
+                                                <p >tutorials and training</p>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="http://mdbootstrap.com/bootstrap-tutorial/" class="btn btn-primary btn-lg">Start learning</a>
+                                                <img src="images/bussiness_slider.jpg">
+                                            </li>
+                                        </ul>
+                                    </div>-->
+                                    <!--Caption-->
+                                </div>
+                                <!--/.Second slide -->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <!--Caption-->
+                    <!--                <div class="flex-center animated fadeInDown">
+                                        <ul>
+                                            <li>
+                                                <h1 class="h1-responsive" >Visit our consultancy</h1></li>
+                                            <li>
+                                                <p >Our consultancy can help you with any question</p>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" href="http://mdbootstrap.com/forums/forum/support/" class="btn btn-primary btn-lg">Visit consultancy</a>
+                                           <img src="images/consultancy_slide.jpg">
+                                            </li>
+                                        </ul>
+                                    </div>-->
+                                    <!--Caption-->
+                                </div>
+                                <img src="images/bank.jpg" width="10" height="10">
+                                <!--/.Third slide-->
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+                                <span class="icon-prev" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+                                <span class="icon-next" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--new slider-->
+                        <!--new search-->
+                        <br>
+                        <!--search div-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="col-lg-10" style="margin-left: 12%" >  
+
+
+
+
+
+
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <div class="btn-group">
+                                                    <select class="selectpicker" data-style="btn-primary">
+                                                        <option>Jobs</option>
+                                                        <option>Scholarship</option>
+                                                        <option>Business</option>
+                                                        <option>Consultancy</option>
+                                                        <option>Training and Confrences</option>
+                                                        <option>Grants</option>
+                                                    </select>  
+                                                </div>
+                                            </div>
+                                            <div class="md-form form-group">
+                                                <!--<i class="fa fa-pencil prefix"></i>-->
+                                                <input type="text" id="form92" class="form-control validate" placeholder="Type Keyword">
+                                                <!--<label for="form92" data-error="wrong" data-success="right">Type Keyword</label>-->
+                                            </div>
+                                            <div class="btn-group">
+                                                <select class="selectpicker" data-style="btn-primary">
+                                                    <option>Location</option>
+                                                    <option>America</option>
+                                                    <option>Brazil</option>
+                                                    <option>China</option>
+                                                    <option>India</option>
+                                                    <option>Kenya</option>
+                                                    <option>Canada</option>
+                                                    <option>Mexico</option>
+                                                    <option>Zimbabwe</option>
+                                                </select>  
+                                            </div>
+                                            <div class="form-group">
+                                                <a href="" class="btn btn-primary btn-lg">Search</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div></div></div>
+                                <br>
+                                <!--search div-->
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8">
+                                            <div class="col-lg-12">
+                                                <h2 class="ui header">
+                                                    <span class="segment_heading">Featured</span>
+                                                    <span class="sub header">
+                                                        <span class="segment_sub_heading">Find Your fevorite job in our website
+                                                        </span>
+                                                    </span>
+                                                </h2>
+                                                <div class="collections-grid row">
+                                                    <div class="col-lg-6 mbot">
+                                                        <div class="ui fluid card">
+                                                            <a href="job.html">
+                                                                <div class="row">
+                                                                    <div class="col-s-7">
+                                                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/2.jpg'); background-position: center center; display: block;"> 
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-s-9">
+                                                                        <div class="row">
+                                                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                                <div class="heading bold ln20">
+                                                                                    Trending jobs of the week
+                                                                                </div>
+                                                                                <div class="zblack fontsize4 description mt5  hp ">Bring in the new year in style and your Job</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                          
+                                                            </a>                                                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 mbot">
+                                                        <div class="ui fluid card">
+                                                            <a href="job.html">
+                                                                <div class="row">
+                                                                    <div class="col-s-7">
+                                                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/job1.jpg'); background-position: center center; display: block;"> 
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-s-9">
+                                                                        <div class="row">
+                                                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                                <div class="heading bold ln20">
+                                                                                    New Jobs you probably tried yet
+                                                                                </div>
+                                                                                <div class="zblack fontsize4 description mt5  hp ">Find the best places to work the happiest time of the year</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                          
+                                                            </a>                                                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 mbot">
+                                                        <div class="ui fluid card">
+                                                            <a href="job.html">
+                                                                <div class="row">
+                                                                    <div class="col-s-7">
+                                                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/suggested_jobs.jpg'); background-position: center center; display: block;"> 
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-s-9">
+                                                                        <div class="row">
+                                                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                                <div class="heading bold ln20">
+                                                                                    Suggested jobs
+                                                                                </div>
+                                                                                <div class="zblack fontsize4 description mt5  hp ">Find the best places to work the happiest time of the year</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                          
+                                                            </a>                                                                               
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 mbot">
+                                                        <div class="ui fluid card">
+                                                            <a href="job.html">
+                                                                <div class="row">
+                                                                    <div class="col-s-7">
+                                                                        <div title="" class="collection-box-bg" data-original="#" style="background-image: url('images/cv1.jpg'); background-position: center center; display: block;"> 
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-s-9">
+                                                                        <div class="row">
+                                                                            <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                                <div class="heading bold ln20">
+                                                                                    Upload CV
+                                                                                </div>
+                                                                                <div class="zblack fontsize4 description mt5  hp ">Find the best places to work the happiest time of the year</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                          
+                                                            </a>                                                                               
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <h2 class="ui header">
+                                                <span class="segment_heading"><br></span>
+                                                <span class="sub header">
+                                                    <span class="segment_sub_heading"><br>
+                                                        <!--                                Explore curated lists  around World-->
+                                                    </span>
+                                                </span>
+                                            </h2> 
+                                            <div class="collections-grid row">
+                                                <div class="col-l-12 col-s-16 mbot">
+                                                    <div class="ui fluid card"><a href="bussiness.html">
+                                                        <div class="row">
+                                                            <div class="col-s-7">
+                                                                <div title="Top Restaurants in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/e140962ec7eecbb851155fe0bb0cd28c_1463395649.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/training.png'); background-position: center center; display: block;"> 
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-s-9">
+                                                                <div class="row">
+                                                                    <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                        <div class="heading bold ln20">
+                                                                            Business
+                                                                        </div>
+                                                                        <div class="zblack fontsize4 description mt5  hp ">The most popular jobs in town this week</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>                                                                          
+                                                    </a>                                                                               
+                                                </div>
+                                            </div>
+                                            <div class="col-l-12 col-s-16 mbot">
+                                                <div class="ui fluid card"><a href="scholarship.html">
+                                                    <div class="row">
+                                                        <div class="col-s-7">
+                                                            <div title="Restaurants with Online Reservations in Bangalore" class="collection-box-bg" data-original="https://b.zmtcdn.com/data/collections/3568578bd110f606e5ab1589b48410c1_1463635783.jpg?fit=around%7C300%3A250&amp;crop=300%3A250%3B%2A%2C%2A" style="background-image: url('images/certification.jpg'); background-position: center center; display: block;"> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-s-9">
+                                                            <div class="row">
+                                                                <div class="ptop0 mr20 ml5 coll_detail">                                                            
+                                                                    <div class="heading bold ln20">
+                                                                        Scholarships
+                                                                    </div>
+                                                                    <div class="zblack fontsize4 description mt5  hp ">Never wait for a opportunity again. Search your spot with Jobportal</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                                          
+                                                </a>                                                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <!--Content-->
+                        <!-- Quick searches -->
+                        <section class="wrapper mtop2 ptop">
+                            <h2 class="ui header">
+                                <span class="segment_heading">Quick Searches</span>
+                                <span class="sub header">
+                                    <span class="segment_sub_heading">
+                                        Discover Jobs by type of Domain            </span>
+                                    </span>
+                                </h2>
+                                <div class="ui segment eight column doubling padded grid">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/video-poster.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_1.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="delivery-text">Software</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/hardware.png" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_13.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="hardware-text">Hardware</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/marketing.jpeg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_8.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="marketing-text">Marketing</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/teacher.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_9.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="teacher-text">Teaching</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/banking.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_9.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="teacher-text">Banking</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="job.html" class="column ta-center start-categories-item">
+                                                <img class="ui middle aligned mini image mb5 lazy" src="images/hospitality2.jpg" data-original="https://b.zmtcdn.com/images/search_tokens/app_icons/category_9.png?output-format=webp" style="height: 70px; width: 70px;"/>
+                                                <span id="teacher-text">Hospitality</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--/.Content-->
+                            <div class="container">
+                                <h2 class="ui header">
+                                    <span class="segment_heading">
+                                        Popular countries        </span>
+                                        <span class="sub header">
+                                            <span class="segment_sub_heading">
+                                                Country wise jobs           </span>
+                                            </span>
+                                        </h2>
+                                        <div class="ui segment row">
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Indiranagar" href="job.html">
+                                                America             <span class="grey-text hide-on-mobile">(375 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Whitefield" href="job.html">
+                                                Armenia                <span class="grey-text hide-on-mobile">(561 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Marathahalli" href="job.html">
+                                                Belarus               
+                                                <span class="grey-text hide-on-mobile">(384 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 5th Block" href="job.html">
+                                                Belize              <span class="grey-text hide-on-mobile">(184 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Jayanagar" href="job.html">
+                                                Benin                <span class="grey-text hide-on-mobile">(306 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in HSR" href="job.html">
+                                                Brazil              <span class="grey-text hide-on-mobile">(306 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in JP Nagar" href="job.html">
+                                                China              <span class="grey-text hide-on-mobile">(260 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Lavelle Road" href="job.html">
+                                                Canada              <span class="grey-text hide-on-mobile">(59 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in MG Road" href="job.html">
+                                                Dominica               <span class="grey-text hide-on-mobile">(74 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in BTM" href="job.html">
+                                                Ethiopia              <span class="grey-text hide-on-mobile">(431 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 4th Block" href="job.html">
+                                                Grenada                <span class="grey-text hide-on-mobile">(85 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 7th Block" href="job.html">
+                                                Honduras                <span class="grey-text hide-on-mobile">(116 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Malleshwaram" href="job.html">
+                                                India                <span class="grey-text hide-on-mobile">(209 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Sarjapur Road" href="job.html">
+                                                Indonesia                <span class="grey-text hide-on-mobile">(183 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Bannerghatta Road" href="job.html">
+                                                Japan               <span class="grey-text hide-on-mobile">(253 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Electronic City" href="job.html">
+                                                Jamaica <span class="grey-text hide-on-mobile">(391 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 6th Block" href="job.html">
+                                                Kenya                <span class="grey-text hide-on-mobile">(98 jobs)</span>
+                                            </a>
+
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Church Street" href="job.html">
+                                                Kosovo               <span class="grey-text hide-on-mobile">(50 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Kalyan Nagar" href="job.html">
+                                                Lebanon               <span class="grey-text hide-on-mobile">(153 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in New BEL Road" href="job.html">
+                                                Malaysia               <span class="grey-text hide-on-mobile">(194 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Bellandur" href="job.html">
+                                                Mexico               <span class="grey-text hide-on-mobile">(179 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Residency Road" href="job.html">
+                                                Philippines               <span class="grey-text hide-on-mobile">(71 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Brigade Road" href="job.html">
+                                                South Africa               <span class="grey-text hide-on-mobile">(114 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Old Airport Road" href="job.html">
+                                                Sri Lanka               <span class="grey-text hide-on-mobile">(121 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Brookefield" href="job.html">
+                                                Sudan               <span class="grey-text hide-on-mobile">(115 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Frazer Town" href="job.html">
+                                                Suriname               <span class="grey-text hide-on-mobile">(162 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Banashankari" href="job.html">
+                                                Swaziland              <span class="grey-text hide-on-mobile">(219 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Koramangala 1st Block" href="job.html">
+                                                Thailand               <span class="grey-text hide-on-mobile">(84 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Rajajinagar" href="job.html">
+                                                Tonga               <span class="grey-text hide-on-mobile">(146 jobs)</span>
+                                            </a>
+                                            <a class="col-l-1by3 col-s-8 pbot0" title="Restaurants in Basavanagudi" href="job.html">
+                                                Zimbabwe            <span class="grey-text hide-on-mobile">(149 jobs)</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!--New search filter--> 
+                                    <br/> <br/> <br/> 
+                                    <!--/.Content-->
+                                    <div class="container">
+                                        <div class="ui segment row">
+                                            <h3>  Jobs By Salary</h3>
+                                            <button type="button" class="btn btn-primary">Below $1500</button>
+                                            <button type="button" class="btn btn-primary">$1500 - $2000</button>
+                                            <button type="button" class="btn btn-primary">$2000 - $3000</button>
+                                            <button type="button" class="btn btn-primary">$3000 - $4000</button>
+                                            <button type="button" class="btn btn-primary">$4000 - $5000</button>
+                                            <button type="button" class="btn btn-primary">$5000 - $6000</button>
+                                            <button type="button" class="btn btn-primary">$6000 - $7000</button>
+                                            <button type="button" class="btn btn-primary">$7000 - $8000</button>
+                                            <button type="button" class="btn btn-primary">$8000 - $9000</button>
+                                            <h3>  Jobs By Specialization</h3>
+                                            <button type="button" class="btn btn-primary"> Education/Teaching/Training</button>
+                                            <button type="button" class="btn btn-primary"> Sales/Business Development</button>
+                                            <button type="button" class="btn btn-primary"> Administration & Office Support</button>
+                                            <button type="button" class="btn btn-primary"> Engineering</button>
+                                            <button type="button" class="btn btn-primary">Elegant</button>
+                                            <button type="button" class="btn btn-primary"> Vocational Trade and Services</button>
+                                            <button type="button" class="btn btn-primary"> Healthcare / Pharmaceutical </button>
+                                            <button type="button" class="btn btn-primary"> Information Technology</button>
+                                            <button type="button" class="btn btn-primary"> Marketing / Advertising / Communications</button>
+                                            <button type="button" class="btn btn-primary"> Accounting / Audit / Tax</button>
+                                            <br/> <br/> <br/> 
+                                        </div>
+                                    </div>
+                                    <!--///!new search filter-->
+                                    <br/>
+                                    <!--Footer-->
+                                    <footer class="page-footer center-on-small-only">
+                                        <!--Footer Links-->
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <!--First column-->
+                                                <div class="col-md-12  hidden-lg-down">
+                                                    <img src="images/uso_1.png">
+
+                                                    We are Nigeria's No.1 Recruitment website, keeping you informed about the latest jobs in Nigeria,job vacancies in Nigeria and 2016-17 Nigeria jobs and recruitment opportunities
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/.Footer Links-->
+                                        <hr>
+                                        <!--Copyright-->
+                                        <div class="footer-copyright" >
+                                            <div class="container-fluid">
+                                             &copy; 2016-17 Copyright: <a href="http://usojobportal.com"> http://usojobportal.com </a>
+                                         </div>
+                                     </div>
+                                     <!--Footer-->
+                                     <!--/.Footer-->
+                                 </footer>
+                                 <!-- SCRIPTS -->
+                                 <!-- JQuery -->
+                                 <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+                                 <!-- Bootstrap tooltips -->
+                                 <script type="text/javascript" src="js/tether.min.js"></script>
+                                 <!-- Bootstrap core JavaScript -->
+                                 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                                 <!-- MDB core JavaScript -->
+                                 <script type="text/javascript" src="js/mdb.min.js"></script>
+                                 <!-- popup start -->
+                                 <!-- BEGIN # MODAL LOGIN -->
+                                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog" style="margin-left: 30%">
+                                        <div class="modal-content">
+                                            <div class="modal-header" align="center">
+<!--                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+    ×</button>-->
+    <img class="img-circle" id="img_logo" src="images/uso.png">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </button>
+</div>
+<!-- Begin # DIV Form -->
+<div id="div-forms">
+    <!-- Begin # Login Form -->
+    <form id="login-form">
+        <div class="modal-body">
+            <div id="div-login-msg">
+                <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                <span id="text-login-msg">Type your username and password.</span>
+            </div>
+            <input id="login_username" class="form-control" type="text" placeholder="Email" required>
+            <input id="login_password" class="form-control" type="password" placeholder="Password" required>  
+
+
+
+        </div>
+        <div class="modal-footer">
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+            </div>
+            <hr>
+
+            <br>   <hr>
+            <P><b>OR <br><br>Login using :</b></P>
+            <a href="#">
+                <img border="0" alt="Facebook" src="images/fb1.jpg" width="100" height="40">
+            </a>             <a href="#">
+            <img border="0" alt="Google plus" src="images/gplus1.png" width="100" height="40">
+        </a>     <a href="#">
+        <img border="0" alt="yahoo" src="images/yahoo1.jpg" width="100" height="40">
+    </a><br><br>
+
+    <div>
+        <button id="login_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+        <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+    </div>
+</div>
+</form>
+<!-- End # Login Form -->
+<!-- Begin | Lost Password Form -->
+<form id="lost-form" style="display:none;">
+    <div class="modal-body">
+        <div id="div-lost-msg">
+            <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+            <span id="text-lost-msg">Type your e-mail.</span>
+        </div>
+        <input id="lost_email" class="form-control" type="text" placeholder="Email" required>
+    </div>
+    <div class="modal-footer">
+        <div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+        </div>
+        <div>
+            <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+            <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+        </div>
+    </div>
+</form>
+<!-- End | Lost Password Form -->
+<!-- Begin | Register Form -->
+<!-- <div class="row"> -->
+<form id="register-form" style="display:none;">
+    <div class="modal-body" style="position: relative;width: 100%;">
+        <div id="div-register-msg">
+            <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+            <span id="text-register-msg">Register an account.</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <input id="register_username" class="form-control" type="text" placeholder="User Name" required>
+                <input id="register_email" class="form-control" type="text" placeholder="Email" required>
+                <input id="register_password" class="form-control" type="password" placeholder="Password" required><br>
+
+                <div class="dropdown">
+                    <select class="selectpicker" data-style="btn-primary">
+                        <option selected>Experience</option>
+                        <option>Fresher</option>
+                        <option>0 - 1 Year</option>
+                        <option>1 - 2 years</option>
+                        <option>2 - 5 years</option>
+                        <option>5 - 10 years</option>
+                        <option>10+ years</option>
+                    </select>  
+                                            <!--                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                            Experience
+                                                                                        </button>
+                                                                                        <div class="dropdown-menu" >
+                                                                                            <a class="dropdown-item" href="#">Fresher</a>
+                                                                                            <a class="dropdown-item" href="#">0 - 1 Year </a>
+                                                                                            <a class="dropdown-item" href="#">1 - 2 years</a>
+                                                                                            <a class="dropdown-item" href="#">2 - 5 years</a>
+                                                                                            <a class="dropdown-item" href="#">5 - 10 years</a>
+                                                                                            <a class="dropdown-item" href="#">10+ years</a>
+                                                                                             <a class="dropdown-item" href="#">2 - 3 Years</a> 
+                                                                                         </div>-->
+                                                                                         <!-- <button class="btn btn-primary" type="submit">Upload</button> -->
+                                            <!-- <label class="btn btn-primary btn-file">
+                                                Browse <input type="file" style="display: none;">
+                                            </label> -->
+                                        </div> <br>
+                                        <!--<div class="dropdown" style="position: relative;left: 7.5em;bottom: 3em;">-->
+                                        <select class="selectpicker" data-style="btn-primary" multiple>
+                                            <option selected>Industry</option>
+                                            <option>Accounting/Tax</option>
+                                            <option>Agriculture/Farming</option>
+                                            <option>Construction</option>
+                                            <option>Finance</option>
+                                            <option>IT</option>
+                                            <option>Banking/Finanace</option>
+                                        </select>  
+                                        <!--                                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                        Industry
+                                                                                    </button>
+                                                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                                                                                         <h6 class="dropdown-header">Dropdown header</h6> 
+                                                                                        <a class="dropdown-item" href="#">Accounting/Tax</a>
+                                                                                        <a class="dropdown-item" href="#">Agriculture/Farming</a>
+                                                                                        <a class="dropdown-item" href="#">Construction</a>
+                                                                                        <a class="dropdown-item" href="#">Finance</a>
+                                                                                        <a class="dropdown-item" href="#">IT</a>
+                                                                                        <a class="dropdown-item" href="#">Banking/Finanace</a>
+                                                                                    </div>-->
+                                                                                    <!--</div>-->
+
+                                                                                </div>
+                                                                                <div class="col-lg-6" style="position: relative;top: 19px;">
+                                                                                    <input id="login_password" class="form-control" type="tel" placeholder="Mobile Number" required>
+                                                                                    <input id="login_username" class="form-control" type="text" placeholder="Current Location" required>
+                                                                                    <input id="register_password" class="form-control" type="text" placeholder="Keyword" required><br>
+
+                                                                                    <label class="btn btn-primary btn-file">
+                                                                                        Upload CV<input type="file" style="display: none;">
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <div>
+                                                                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                                                                            </div>
+                                                                            <div>
+                                                                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                                                                <button id="register_lost_btn" type="button" class="btn btn-link">Forgot Password?</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+                                                                    <!-- </div> -->
+                                                                    <!-- End | Register Form -->
+                                                                </div>
+                                                                <!-- End # DIV Form -->
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!--/////////chat////////////////////-->
+
+                                                    <!--<div class="container">-->
+<!--        <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="float: right">
+        <div class="col-xs-12 col-md-12">
+        	<div class="panel panel-default">
+                <div class="panel-heading top-bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - Miguel</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="text-align: right;">
+                        <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+                        <a href="#"><span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span></a>
+                    </div>
+                </div>
+                <div class="panel-body msg_container_base">
+                    <div class="row msg_container base_sent">
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_sent">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_receive">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_receive">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_sent">
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_sent">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_receive">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_sent">
+                        <div class="col-md-10 col-xs-10 ">
+                            <div class="messages msg_sent">
+                                <p>that mongodb thing looks good, huh?
+                                tiny master db, and huge document store</p>
+                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                        </span>
+                    </div>
+                </div>
+    		</div>
+        </div>
+    </div>-->
+    
+<!--    <div class="btn-group dropup">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-cog"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#" id="new_chat"><span class="glyphicon glyphicon-plus"></span> Novo</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-list"></span> Ver outras</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-remove"></span> Fechar Tudo</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-eye-close"></span> Invisivel</a></li>
+        </ul>
+    </div>-->
+
+
+    <!--</div>-->
+    <!--new chat-->
+
+
+<!--<div class="container bootstrap snippet">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4" id="chat_modal">
+            <div class="portlet portlet-default">
+                <div class="portlet-heading">
+                    <div class="portlet-title">
+                        <h4><i class="fa fa-circle text-green"></i> Jane Smith</h4>
+                    </div>
+                    <div class="portlet-widgets">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-white dropdown-toggle btn-xs" data-toggle="dropdown">
+                                <i class="fa fa-circle text-green"></i> Status
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-circle text-green"></i> Online</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-circle text-orange"></i> Away</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-circle text-red"></i> Offline</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="divider"></span>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#chat"><i class="fa fa-chevron-down"></i></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div id="chat" class="panel-collapse collapse in">
+                    <div>
+                    <div class="portlet-body chat-widget" style="overflow-y: auto; width: auto; height: 300px;">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="text-center text-muted small">January 1, 2014 at 12:23 PM</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/1/" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Jane Smith
+                                            <span class="small pull-right">12:23 PM</span>
+                                        </h4>
+                                        <p>Hi, I wanted to make sure you got the latest product report. Did Roddy get it to you?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/7/" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">John Smith
+                                            <span class="small pull-right">12:28 PM</span>
+                                        </h4>
+                                        <p>Yeah I did. Everything looks good.</p>
+                                        <p>Did you have an update on purchase order #302?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object img-circle" src="http://lorempixel.com/30/30/people/7/" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Jane Smith
+                                            <span class="small pull-right">12:39 PM</span>
+                                        </h4>
+                                        <p>No not yet, the transaction hasn't cleared yet. I will let you know as soon as everything goes through. Any idea where you want to get lunch today?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    </div>
+                    <div class="portlet-footer">
+                        <form role="form">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Enter message..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-default pull-right">Send</button>
+                                <div class="clearfix"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         /.col-md-4 
+    </div>
+</div>                -->
+<!--new chat-->
+
+
+<!--chat-->
+<!-- END # MODAL LOGIN -->
+<!-- Modal -->
+<!-- popup end -->
+</body>
+</html>
+<script>
+    $(function () {
+
+        var $formLogin = $('#login-form');
+        var $formLost = $('#lost-form');
+        var $formRegister = $('#register-form');
+        var $divForms = $('#div-forms');
+        var $modalAnimateTime = 300;
+        var $msgAnimateTime = 150;
+        var $msgShowTime = 2000;
+
+        $("form").submit(function () {
+            switch (this.id) {
+                case "login-form":
+                var $lg_username = $('#login_username').val();
+                var $lg_password = $('#login_password').val();
+                if ($lg_username == "ERROR") {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "error", "glyphicon-remove", "Login error");
+                } else {
+                    msgChange($('#div-login-msg'), $('#icon-login-msg'), $('#text-login-msg'), "success", "glyphicon-ok", "Login OK");
+                }
+                return false;
+                break;
+                case "lost-form":
+                var $ls_email = $('#lost_email').val();
+                if ($ls_email == "ERROR") {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "error", "glyphicon-remove", "Send error");
+                } else {
+                    msgChange($('#div-lost-msg'), $('#icon-lost-msg'), $('#text-lost-msg'), "success", "glyphicon-ok", "Send OK");
+                }
+                return false;
+                break;
+                case "register-form":
+                var $rg_username = $('#register_username').val();
+                var $rg_email = $('#register_email').val();
+                var $rg_password = $('#register_password').val();
+                if ($rg_username == "ERROR") {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "error", "glyphicon-remove", "Register error");
+                } else {
+                    msgChange($('#div-register-msg'), $('#icon-register-msg'), $('#text-register-msg'), "success", "glyphicon-ok", "Register OK");
+                }
+                return false;
+                break;
+                default:
+                return false;
+            }
+            return false;
+        });
+
+        $('#login_register_btn').click(function () {
+            modalAnimate($formLogin, $formRegister)
+        });
+        $('#register_login_btn').click(function () {
+            modalAnimate($formRegister, $formLogin);
+        });
+        $('#login_lost_btn').click(function () {
+            modalAnimate($formLogin, $formLost);
+        });
+        $('#lost_login_btn').click(function () {
+            modalAnimate($formLost, $formLogin);
+        });
+        $('#lost_register_btn').click(function () {
+            modalAnimate($formLost, $formRegister);
+        });
+        $('#register_lost_btn').click(function () {
+            modalAnimate($formRegister, $formLost);
+        });
+
+        function modalAnimate($oldForm, $newForm) {
+            var $oldH = $oldForm.height();
+            var $newH = $newForm.height();
+            $divForms.css("height", $oldH);
+            $oldForm.fadeToggle($modalAnimateTime, function () {
+                $divForms.animate({height: $newH}, $modalAnimateTime, function () {
+                    $newForm.fadeToggle($modalAnimateTime);
+                });
+            });
+        }
+
+        function msgFade($msgId, $msgText) {
+            $msgId.fadeOut($msgAnimateTime, function () {
+                $(this).text($msgText).fadeIn($msgAnimateTime);
+            });
+        }
+
+        function msgChange($divTag, $iconTag, $textTag, $divClass, $iconClass, $msgText) {
+            var $msgOld = $divTag.text();
+            msgFade($textTag, $msgText);
+            $divTag.addClass($divClass);
+            $iconTag.removeClass("glyphicon-chevron-right");
+            $iconTag.addClass($iconClass + " " + $divClass);
+            setTimeout(function () {
+                msgFade($textTag, $msgOld);
+                $divTag.removeClass($divClass);
+                $iconTag.addClass("glyphicon-chevron-right");
+                $iconTag.removeClass($iconClass + " " + $divClass);
+            }, $msgShowTime);
+        }
+    });
+
+
+
+    //chat
+//    $(document).on('click', '.panel-heading span.icon_minim', function (e) {
+//    var $this = $(this);
+//    if (!$this.hasClass('panel-collapsed')) {
+//        $this.parents('.panel').find('.panel-body').slideUp();
+//        $this.addClass('panel-collapsed');
+//        $this.removeClass('glyphicon-minus').addClass('glyphicon-plus');
+//    } else {
+//        $this.parents('.panel').find('.panel-body').slideDown();
+//        $this.removeClass('panel-collapsed');
+//        $this.removeClass('glyphicon-plus').addClass('glyphicon-minus');
+//    }
+//});
+//$(document).on('focus', '.panel-footer input.chat_input', function (e) {
+//    var $this = $(this);
+//    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+//        $this.parents('.panel').find('.panel-body').slideDown();
+//        $('#minim_chat_window').removeClass('panel-collapsed');
+//        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+//    }
+//});
+//$(document).on('click', '#new_chat', function (e) {
+//    var size = $( ".chat-window:last-child" ).css("margin-left");
+//     size_total = parseInt(size) + 400;
+//    alert(size_total);
+//    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+//    clone.css("margin-left", size_total);
+//});
+//$(document).on('click', '.icon_close', function (e) {
+//    //$(this).parent().parent().parent().parent().remove();
+//    $( "#chat_window_1" ).remove();
+//});
+//chat
+
+
+
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/i18n/defaults-*.min.js"></script>-->
